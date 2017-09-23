@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float_v1</title>
+</head>
+<style>
+    .container {
+        min-width: 960px;
+        max-width: 1280px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .page-header {
+        background-color: orange;
+        height: 150px;
+    }
+    .page-header__logo{
+        width: 150px;
+        height: 100px;
+        background-color: aqua;
+        float: left;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+    .page-header__navigation{
+        width: 470px;
+        height: 80px;
+        background-color: aqua;
+        float: right;
+        margin-top: 35px;
+        margin-right: 20px;
+    }
+    .f-section{
+        height: 900px;
+    }
+    .f-section__sidebar{
+        float: left;
+        width: 25%;
+        height: 900px;
+        background-color: green;
+    }
+    .f-section__gallery {
+        height: 900px;
+        background-color: gray;
+    }
+    .f-gallery {
+        width: 75%;
+        float: left;
+    }
+    .f-gallery__item{
+        width: 29%;
+        height: 190px;
+        background-color: goldenrod;
+        display: block;
+        float: left; 
+        margin: 15px 15px;
+    }
+    .page-footer {
+        height: 100px;
+        background-color: #4d1f09;
+    }
+</style>
+<body>
+    
+</body>
+<div class="container">
+
+<!-- Start header -->
+    <header class="page-header">
+        <div class="page-header__logo"></div>
+        <nav class="page-header__navigation"></nav>
+    </header>
+<!-- End header -->
+
+<!-- Start first section -->
+        <section class="f-section">
+            <aside class="f-section__sidebar"></aside>
+            <div class="f-section__gallery">
+               <div class="f-gallery">
+                    <img class="f-gallery__item" src="#" alt="Image1">
+                    <img class="f-gallery__item" src="#" alt="Image2">
+                    <img class="f-gallery__item" src="#" alt="Image3">
+                </div>
+                <div class="f-gallery">
+                    <img class="f-gallery__item" src="#" alt="Image4">
+                    <img class="f-gallery__item" src="#" alt="Image5">
+                    <img class="f-gallery__item" src="#" alt="Image6">
+                </div>
+                <div class="f-gallery">
+                    <img class="f-gallery__item" src="#" alt="Image7">
+                    <img class="f-gallery__item" src="#" alt="Image8">
+                    <img class="f-gallery__item" src="#" alt="Image9">
+                </div>
+            </div>
+        </section>
+<!-- End first section -->
+   
+    <footer class="page-footer"></footer>
+</div>
+</html>

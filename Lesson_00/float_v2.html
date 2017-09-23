@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float_v1</title>
+</head>
+<style>
+    .container {
+        min-width: 960px;
+        max-width: 1280px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .page-header {
+        background-color: orange;
+        height: 150px;
+    }
+    .f-section{
+        height: 700px;
+    }
+    .f-section__sidebar{
+        float: left;
+        width: 25%;
+        height: 700px;
+        background-color: green;
+    }
+    .f-section__article {
+        width: 50%;
+        float: left;
+        height: 700px;
+        background-color: gray;
+    }
+    .page-footer {
+        height: 100px;
+        background-color: #4d1f09;
+    }
+</style>
+<body>
+    
+</body>
+<div class="container">
+    <header class="page-header"></header>
+      
+<!-- Start first section -->
+            <section class="f-section">
+                <aside class="f-section__sidebar"></aside>
+                <article class="f-section__article"></article>
+                <aside class="f-section__sidebar"></aside>
+            </section>
+<!-- End first section -->
+        
+    <footer class="page-footer"></footer>
+</div>
+</html>
