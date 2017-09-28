@@ -1,0 +1,33 @@
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .container{
+        min-width: 650px;
+    }
+    .b-popup{
+        width: 57.33%;
+        height: 615px;
+    }
+    .b-popup-content{
+        padding-top: 23px;
+        height: 443px;
+    }
+    .b-social-network{
+        width: 100%;
+        margin-top: 275px;
+        padding-top: 25px;
+    }
+    .line{
+        display: block;
+    }
+    .b-form{
+        width: 100%;
+        position: absolute;
+    }
+    .b-popup-footer{
+        position: relative;
+    }
+    .b-sing-up{
+        position: absolute;
+        margin-left: 15%;
+    }
+}
