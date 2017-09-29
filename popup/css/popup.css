@@ -53,7 +53,7 @@
     float: left;
 }
 .b-social-network__link{
-    width: 71.5%;
+    width: 300px;
     height: 40px;
     margin: 0 auto;
 }
@@ -100,7 +100,7 @@
 }
 .b-form-group{
     height: 60px;
-    width: 71.59%;
+    width: 300px;
     margin: 0 auto;
 }
 .b-form__label_login,
@@ -123,14 +123,15 @@
 }
 .b-textfield{
     height: 36px;
-    width: 99.33%;
+    width: 300px;
     border: 1px solid #dddddd;
     border-radius: 3px;
 }
 .b-form-checkbox{
     height: 38px;
     padding-top: 24px;
-    margin-left: 60px;
+    width: 300px;
+    margin: 0 auto;
 }
 .b-form__hide-checkbox{
     display: none;
@@ -159,6 +160,11 @@
     position: absolute;
     margin-left: 20px;
 }
+.b-form-login {
+    height: 60px;
+    width: 300px;
+    margin: 0 auto;
+}
 .b-form__btn{
     height: 40px;
     width: 103px;
@@ -182,7 +188,6 @@
     color: #666666;
 }
 .b-sing-up{
-    display: block;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 18px;

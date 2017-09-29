@@ -1,10 +1,10 @@
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 860px) {
     .container{
-        min-width: 650px;
+        min-width: 480px;
     }
     .b-popup{
-        width: 57.33%;
+        width: 480px;
         height: 615px;
     }
     .b-popup-content{
@@ -26,9 +26,5 @@
     }
     .b-popup-footer{
         position: relative;
-    }
-    .b-sing-up{
-        position: absolute;
-        margin-left: 15%;
     }
 }
