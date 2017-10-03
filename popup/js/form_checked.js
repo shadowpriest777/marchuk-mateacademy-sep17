@@ -5,13 +5,13 @@ function form_checked(sSelector){
     f.formGroup = f.form.find('.b-form-group');
 
         f.check = function (event){
-            event.preventDefault();
 
             f.fields.each(function(){
                 var jqField = $(this);
-                
-                if (!jqField.val()){
+                var fieldRegExps = /^[a-z0-9_-]{5,16}$/;
+                if (!jqField.val().match(fieldRegExps)){
                     f.formGroup.addClass('b-textfield_invalid');
+                    event.preventDefault();
                     return false;
                 }
                 else {
