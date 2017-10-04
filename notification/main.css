@@ -9,8 +9,6 @@
     box-sizing: border-box;
 }
 .col {
-    width: 292px;
-    height: 184px;
     background-color: #fff;
     border-radius: 3px;
     -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.15);
@@ -25,7 +23,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 24px;
-    padding-bottom: 0;
+    padding-bottom: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
@@ -45,18 +43,14 @@
 }
 .links {
     text-transform: uppercase;
-    margin-top: 18px;
     font-family: 'Roboto', sans-serif;
-        -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     padding: 16px 24px;
-    border-radius: 3px;
     background-color: #f9f9f9;
+    border-radius: 3px;
 }
 .links__message,
 .links__like{
     width: 107px;
-    height: 40px;
     display: inline-block;
     text-decoration: none;
     border-radius: 3px;

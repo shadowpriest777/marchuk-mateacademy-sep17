@@ -29,6 +29,8 @@ input{
     max-width: 840px;
     margin-top: 50px;
     border-top: 2px solid #e62b1e;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
 }
 .b-popup-header{
     padding: 30px;
