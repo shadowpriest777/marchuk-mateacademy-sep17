@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Popup</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -12,60 +13,45 @@
     <div class="container">
         <div class="b-popup">
             <div class="b-popup-header">
-                <h1>Log in to the Site </h1>
-                <img src="images/%D1%81lose.png" alt="close">
+                <div class="b-popup-header__title">Log in to the Site</div>
+                <i class="fa fa-times popup--close" aria-hidden="true"></i>
             </div>
             <div class="b-popup-content">
-                <div class="b-social-network">
-                    <div class="b-social-network__link">
-                        <a href="#" class="b-social-network__facebook">
-                            <img src="images/facebook.png" alt="facebook">
-                            <span>Log in with Facebook</span>
-                        </a>
-                    </div>
-                    <div class="b-social-network__link">
-                        <a href="#" class="b-social-network__google">
-                            <img src="images/google.png" alt="google">
-                            <span>Log in with Google +</span>
-                        </a>
-                    </div>
+                <div class="b-social-networks">
+                    <a href="#" class="btn btn--fb"><i class="btn--fb-icon fa fa-facebook" aria-hidden="true"></i>Log in with Facebook</a>
+                    <a href="#" class="btn btn--gl"><i class="btn--gl-icon fa fa-google-plus" aria-hidden="true"></i>Log in with Google +</a>
                 </div>
 
-                
 <!-- Start form -->
-                
-                <form action="?" method="GET" id="form" class="b-form">
-                    <div class="b-form-group">
-                        <label class="b-form__label_login" for="login">Login</label>
-                        <input type="text" class="b-textfield" id="login">
-                    </div>
-                    <div class="b-form-group">
-                        <label class="b-form__label_password" for="password">Password</label>
-                        <input type="password" class="b-textfield" id="password">
-                    </div>
-                    <div class="b-form-checkbox">
-                        <input class="b-form__hide-checkbox" type="checkbox" id="b-form__label-checkbox">
-                        <label for="b-form__label-checkbox">
-                            <span class="b-form__icons-checkbox">
-                                <span class="check-remember">Remember me</span>
-                            </span>
-                        </label>
-                    </div>
-                    <div class="b-form-login">
-                        <button type="submit" class="b-form__btn">Log in</button>
-                        <a class="b-form__help-link" href="#">Need help logging in?</a>
-                    </div>
-                    <hr class="line">
-                </form>
-                
+                <div class="b-form">
+                    <form action="?" method="GET" id="form">
+                        <div class="b-form-group">
+                            <label for="login">Login</label>
+                            <input type="text" class="b-textfield" id="login">
+                        </div>
+                        <div class="b-form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="b-textfield" id="password">
+                        </div>
+                        <div class="b-form-group">
+                           <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Remember me</span>
+                            </label>
+                        </div>
+                        <div class="b-form-group">
+                            <button type="submit" class="b-form__btn">Log in</button>
+                            <a class="b-form__help-link" href="#">Need help logging in?</a>
+                        </div>
+                    </form>
+                </div>
 <!-- End form -->
                
-                </div>
+            </div>
             <div class="b-popup-footer">
                 <div class="b-sing-up">Dont have an account yet?
                 <a class="b-sing-up__link" href="#">Sign up</a>
                 </div>
-                
             </div>
         </div>
     </div>
@@ -74,11 +60,11 @@
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous">
     </script>
-    <script type='text/javascript' src='js/form_checkbox.js'></script>
-    <script type='text/javascript' src='js/form_checked.js'></script>
+<!--    <script type='text/javascript' src='js/form_checked.js'></script>-->
+<!--
     <script>
-        var check = new form_checkbox('#form');
         var fc1 = new form_checked('#form');
     </script>
+-->
 </body>
 </html>

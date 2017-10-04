@@ -1,30 +1,26 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 860px) {
-    .container{
-        min-width: 480px;
-    }
-    .b-popup{
-        width: 480px;
-        height: 615px;
-    }
+
     .b-popup-content{
-        padding-top: 23px;
-        height: 421px;
-    }
-    .b-social-network{
-        width: 100%;
-        height: 124px;
-        margin-top: 275px;
-        padding-top: 25px;
-    }
-    .line{
-        display: block;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
     .b-form{
-        width: 100%;
-        position: absolute;
+        border-left: none;
+        border-bottom: 1px solid #cfcfcf;
+        padding: 24px 0;
+        margin: 0 60px;
     }
-    .b-popup-footer{
-        position: relative;
+    .b-social-networks{
+        padding: 24px 60px;
     }
+
 }
