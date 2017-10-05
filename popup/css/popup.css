@@ -63,7 +63,7 @@ input{
     background-color: #f3f3f3;
 }
 .b-social-networks{
-    padding: 40px 60px;
+    padding: 30px 60px;
 }
 .btn{
     display: block;
@@ -97,10 +97,11 @@ input{
 .b-form{
     padding: 0 60px;
     border-left: 2px solid #cfcfcf;
-    margin: 40px 0;
+    margin: 30px 0;
 }
 .b-form-group:not(:last-child){
-    padding-bottom: 24px;
+    padding-bottom: 18px;
+    font-size: 14px;
 }
 .checkbox {
 	cursor:pointer;
@@ -131,7 +132,7 @@ input{
 }
 .b-form__btn{
     height: 40px;
-    width: 100px;
+    width: 105px;
     border: none;
     background-color: #252525;
     color: #fff;
@@ -151,9 +152,9 @@ input{
     background-color: #666666;
 }
 .b-form__help-link{
-    text-decoration: none;
     color: #252525;
-    border-bottom: 2px solid #656565;
+    -webkit-text-decoration-color: #656565;
+    text-decoration-color: #656565;
     font-size: 14px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -162,15 +163,15 @@ input{
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 .b-form__help-link:hover{
     color: #666666;
 }
 .b-popup-footer{
-    padding: 30px;
+    padding: 40px;
     background-color: #fff;
 }
 .b-sing-up{
