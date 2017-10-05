@@ -139,6 +139,14 @@ input{
     font-size: 15px;
     border-radius: 3px;
 }
+.submit-btn{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 .b-form__btn:hover{
     background-color: #666666;
 }
@@ -147,7 +155,16 @@ input{
     color: #252525;
     border-bottom: 2px solid #656565;
     font-size: 14px;
-    margin-left: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 .b-form__help-link:hover{
     color: #666666;
