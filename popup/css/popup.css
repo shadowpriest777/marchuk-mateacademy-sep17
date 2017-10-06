@@ -58,8 +58,6 @@ input{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-}
-.b-popup-content{
     background-color: #f3f3f3;
 }
 .b-social-networks{
@@ -173,16 +171,19 @@ input{
 .b-popup-footer{
     padding: 40px;
     background-color: #fff;
+    font-weight: 300;
 }
 .b-sing-up{
     text-align: center;
     font-size: 18px;
+    font-weight: 300;
     color: #666666;
 }
 .b-sing-up__link{
     text-decoration: none;
     color: #000;
     border-bottom: 2px solid #000;
+    font-weight: bold;
 }
 /* for validation */
 

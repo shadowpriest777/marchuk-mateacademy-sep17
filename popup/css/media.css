@@ -13,14 +13,19 @@
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
+    .b-popup-header{
+        padding: 25px;
+}
     .b-form{
         border-left: none;
+        padding: 20px 0;
+        margin: 0 90px;
         border-bottom: 1px solid #cfcfcf;
-        padding: 24px 0;
-        margin: 0 60px;
     }
     .b-social-networks{
-        padding: 24px 60px;
+        padding: 24px 90px;
     }
-
+    .b-popup-footer{
+        padding: 35px;
+    }
 }
