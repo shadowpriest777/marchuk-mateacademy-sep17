@@ -1,6 +1,9 @@
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .container {
-    width: 680px;
+    width: 685px;
     height: 245px;
     background-color: #e0e0e0;
     margin: 0 auto;
@@ -20,11 +23,8 @@
     float: right;
 }
 .user{
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     padding: 24px;
     padding-bottom: 18px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 .user__foto {
@@ -33,24 +33,23 @@
 }
 .user__name {
     font-size: 18px;
+    line-height: 0;
     color: #333333;
 }
 .user__info {
     color: #888888;
     font-size: 14px;
-    line-height: 23px;
+    line-height: 1.7;
     margin: 0px;
 }
 .links {
+    font-size: 14px;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    padding: 16px 24px;
-    background-color: #f9f9f9;
+    padding: 17px 24px;
     border-radius: 3px;
 }
 .links__message,
 .links__like{
-    width: 107px;
     display: inline-block;
     text-decoration: none;
     border-radius: 3px;
@@ -58,6 +57,7 @@
     line-height: 40px;
 }
 .links__message{
+    width: 107px;
     background-color: #00bcd4;
     color: #fff;
 }
@@ -94,7 +94,7 @@
 .inverse.delta::after{
     content: ''; 
     position: absolute;
-    left: 292px;
+    left: 291px;
     top: 24px;
     border: 12px solid transparent;
     border-left: 12px solid #444444;
