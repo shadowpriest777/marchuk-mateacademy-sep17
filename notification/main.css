@@ -3,24 +3,25 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .container {
-    width: 685px;
-    height: 245px;
+    max-width: 685px;
     background-color: #e0e0e0;
     margin: 0 auto;
     padding: 30px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 .col {
     background-color: #fff;
     border-radius: 3px;
     -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.15);
     box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.15); 
-    float: left;
     position: relative;
-}
-.tooltip-right{
-    float: right;
 }
 .user{
     padding: 24px;
@@ -48,20 +49,20 @@ body{
     padding: 17px 24px;
     border-radius: 3px;
 }
-.links__message,
-.links__like{
+.link__message,
+.link__like{
     display: inline-block;
     text-decoration: none;
     border-radius: 3px;
     text-align: center;
     line-height: 40px;
 }
-.links__message{
+.link__message{
     width: 107px;
     background-color: #00bcd4;
     color: #fff;
 }
-.links__like{
+.link__like{
     width: 121px;
     background-color: #e0e0e0;
     color: #333333;
@@ -79,23 +80,58 @@ body{
 .inverse .links{
     background-color: #333333;
 }
-.inverse .links__like{
+.inverse .link__like{
     background-color: #444444;
     color: #ffffff;
 }
 .delta::after {
     content: ''; 
     position: absolute;
-    left: 24px;
-    top: -24px;
+    bottom: 100%;
+    left: 10%;
 	border: 12px solid transparent;
     border-bottom: 12px solid #ffffff;
 }
 .inverse.delta::after{
     content: ''; 
     position: absolute;
-    left: 291px;
-    top: 24px;
+    bottom: 75%;
+    left: 100%;
     border: 12px solid transparent;
     border-left: 12px solid #444444;
+}
+
+@media only screen and (max-width : 685px) {
+
+    .container{
+        max-width: 385px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .col{
+        margin: 15px;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+
+    .container{
+        max-width: 320px;
+        padding: 0px;
+    }
+    .user,
+    .links{
+        padding: 17px;
+    }
+    .link__message{
+        width: 40%;
+    }
+    .link__like{
+        width: 50%;
+    }
 }
