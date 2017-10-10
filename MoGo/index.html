@@ -51,7 +51,7 @@
                
                 <!-- carousel-item -->
                 
-                <div class="slider-item carousel-item active">
+                <div class="main-section__item carousel-item active">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="header-title">
@@ -73,7 +73,7 @@
                 
                 <!-- carousel-item -->
                 
-                <div class="slider-item carousel-item">
+                <div class="main-section__item carousel-item">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="header-title">
@@ -95,7 +95,7 @@
                 
                 <!-- carousel-item -->
                 
-                <div class="slider-item carousel-item">
+                <div class="main-section__item carousel-item">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="header-title">
@@ -117,7 +117,7 @@
                 
                 <!-- carousel-item -->
                 
-                <div class="slider-item carousel-item">
+                <div class="main-section__item carousel-item">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="header-title">
@@ -139,15 +139,15 @@
                 
                 <!-- carousel-indicators -->
                 
-                <div class="m-section-indicators">
-                   <ol class="carousel-indicators test">
-                    <a href="#" data-target="#carousel-ind" data-slide-to="0" class="ms-indicators__link active"><li></li>
+                <div class="main-section__indicators">
+                   <ol class="carousel-indicators">
+                    <a href="#" data-target="#carousel-ind" data-slide-to="0" class="indicators__link active"><li></li>
                     <span>01</span> Intro</a>
-                    <a href="#" data-target="#carousel-ind" data-slide-to="1" class="ms-indicators__link"><li></li>
+                    <a href="#" data-target="#carousel-ind" data-slide-to="1" class="indicators__link"><li></li>
                     <span>02</span> Work</a>
-                    <a href="#" data-target="#carousel-ind" data-slide-to="2" class="ms-indicators__link"><li></li>
+                    <a href="#" data-target="#carousel-ind" data-slide-to="2" class="indicators__link"><li></li>
                     <span>03</span> About</a>
-                    <a href="#" data-target="#carousel-ind" data-slide-to="3" class="ms-indicators__link"><li></li>
+                    <a href="#" data-target="#carousel-ind" data-slide-to="3" class="indicators__link"><li></li>
                     <span>04</span> Contacts</a>
                   </ol>
               </div> 
@@ -156,11 +156,7 @@
               </div>
 
         </div>
-
-          
-          
-          
-          </div>
+    </div>
 
     <!-- /.header -->
     
@@ -186,6 +182,7 @@
                     <img class="img-fluid" src="img/workplace_1.jpg" alt="">
                 </div>
                 <div class="media-item__addinfo">
+                    <img src="icons/team.svg" alt="">
                     <span>super team</span>
                 </div>
             </div>
@@ -195,6 +192,7 @@
                     <img class="img-fluid" src="img/workplace_2.jpg" alt="">
                 </div>
                 <div class="media-item__addinfo">
+                    <img src="icons/team.svg" alt="">
                     <span>super team</span>
                 </div>
             </div>
@@ -204,6 +202,7 @@
                     <img class="img-fluid" src="img/workplace_3.jpg" alt="">
                 </div>
                 <div class="media-item__addinfo">
+                    <img src="icons/team.svg" alt="">
                     <span>super team</span>
                 </div>
             </div>
@@ -339,10 +338,11 @@
         <!-- Start accordion-->
                    
                     <div id="accordion" role="tablist" aria-multiselectable="true">
-                      <div class="card">
-                        <div class="card-header" role="tab" id="headingOne">
-                          <h5 class="text-uppercase accordion-item__pic">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <div class="card accordion-item">
+                        <div class="card-header accordion-item__header" role="tab" id="headingOne">
+                          <img class="accordion-item__icon" src="icons/PICTURE.svg" alt="">
+                          <h5 class="text-uppercase">
+                            <a class="accordion-item__link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               Photography
                               <span class="accordion-item_arrow arrow_up"></span>
                             </a>
@@ -350,37 +350,39 @@
                         </div>
 
                         <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-                          <p class="card-block">
+                          <p class="accordion-item__text card-block">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                           </p>
                         </div>
                       </div>
-                      <div class="card">
-                        <div class="card-header" role="tab" id="headingTwo">
-                          <h5 class="text-uppercase accordion-item__design">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <div class="card accordion-item">
+                        <div class="card-header accordion-item__header" role="tab" id="headingTwo">
+                            <img class="accordion-item__icon" src="icons/EQUALIZER.svg" alt="">
+                            <h5 class="text-uppercase">
+                            <a class="collapsed accordion-item__link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 creativity
                                 <span class="accordion-item_arrow arrow_down"></span>
                             </a>
                           </h5>
                         </div>
                         <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                          <p class="card-block">
+                          <p class="accordion-item__text card-block">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                           </p>
                         </div>
                       </div>
-                      <div class="card">
-                        <div class="card-header" role="tab" id="headingThree">
-                          <h5 class="text-uppercase accordion-item__bullseye">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <div class="card accordion-item">
+                        <div class="card-header accordion-item__header" role="tab" id="headingThree">
+                          <img class="accordion-item__icon" src="icons/BULLSEYE.svg" alt="">
+                          <h5 class="text-uppercase">
+                            <a class="collapsed accordion-item__link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                web design
                                <span class="accordion-item_arrow arrow_down"></span>
                             </a>
                           </h5>
                         </div>
                         <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-                          <p class="card-block">
+                          <p class="accordion__item-text card-block">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                           </p>
                         </div>
