@@ -150,16 +150,16 @@ p{
     color: #fce38a;
     border: 3px solid #fce38a;
 }
+.m-section-indicators ol{
+    bottom: 48px;
+    line-height: 60px;
+}
 .ms-indicators__link{
-    width: 280px;
+    width: 23%;
     height: 3px;
     margin: 0 15px;
     background-color: #fff;
     font-size: 18px;
-}
-.test{
-    bottom: 48px;
-    line-height: 60px;
 }
 .ms-indicators__link span{
     font-weight: bold;
@@ -170,7 +170,7 @@ p{
 .m-section-indicators .active li{
     transition: 4s;
     background-color: #f38181;
-    width: 280px;
+    width: 100%;
 }
 
 
