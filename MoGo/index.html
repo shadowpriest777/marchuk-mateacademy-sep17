@@ -17,56 +17,146 @@
 </head>
 
 <body>
-                   <div class="slider"></div>
-     <div class="header">
+     <header class="header">
           <div class="container">
-               <div class="row justify-content-between">
-                    <div class="col-1 header-logo">
-                      MoGo
+               <div class="d-flex justify-content-between">
+                    <div class="header-logo">
+                      <a href="#">MoGo</a>
                     </div>
-                    <div class="col-7">
-                        <nav class="float-right header-nav">
+                    <div class="d-flex justify-content-end">
+                        <nav>
                             <ul class="header-menu">
                                 <li class="header-menu__item"><a class="header-menu__link" href="#">About</a></li>
                                 <li class="header-menu__item"><a class="header-menu__link" href="#">service</a></li>
                                 <li class="header-menu__item"><a class="header-menu__link" href="#">work</a></li>
                                 <li class="header-menu__item"><a class="header-menu__link" href="#">blog</a></li>
                                 <li class="header-menu__item"><a class="header-menu__link" href="#">contact</a></li>
-                                <li class="header-menu__item"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
-                                <li class="header-menu__item"><i class="fa fa-search" aria-hidden="true"></i><form class="hide"><input type="search" placeholder="Искать"></form></li>
                             </ul>
                         </nav>
+                    <div class="header-icons">
+                        <img src="icons/SHOPPING-CART.svg">
+                        <img src="icons/MAGNIFYING-GLASS.svg"><form class="hide"><input type="search" placeholder="Search"></form>
                     </div>
+                    </div>
+
                 </div>
           </div>
-      </div>
+      </header>
 
+<!--      MAIN-SECTION -->
+      
        <div class="main-section">
-                <div class="slider-item">
-                   <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="header-title">
-                            <div class="header-title__top">
-                                Creative Template
+          <div id="carousel-ndicators" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+               
+                <!-- carousel-item -->
+                
+                <div class="slider-item carousel-item active">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="header-title">
+                                <div class="header-title__top">
+                                    Creative Template
+                                </div>
+                                <div class="header-title__bottom">
+                                    Welcome<br>to MoGo
+                                </div>
+                                <hr class="header-title__divider">
                             </div>
-                            <div class="header-title__bottom">
-                                Welcome<br>to MoGo
-                            </div>
-                            <hr class="header-title__divider">
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <a class="header-btn__link" href="#">Learn more</a>
                         </div>
                     </div>
+                </div>
+                
+                <!-- carousel-item -->
+                
+                <div class="slider-item carousel-item">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="header-title">
+                                <div class="header-title__top">
+                                    Creative Template
+                                </div>
+                                <div class="header-title__bottom">
+                                    Welcome<br>to MoGo
+                                </div>
+                                <hr class="header-title__divider">
+                            </div>
+                        </div>
 
-                    <div class="row justify-content-center">
-                        <a class="header-btn__link" href="#">Learn more</a>
+                        <div class="row justify-content-center">
+                            <a class="header-btn__link" href="#">Learn more</a>
+                        </div>
                     </div>
-                    <nav class="row header-nav-bottom">
-                      <div class="col-3 header-nav-bottom__divider"><a href="#" class="header-nav-bottom__link"><hr noshade><span>01</span> Intro</a></div>
-                      <div class="col-3 header-nav-bottom__divider"><a href="#" class="header-nav-bottom__link"><hr noshade><span>02</span> Work</a></div>
-                      <div class="col-3 header-nav-bottom__divider"><a href="#" class="header-nav-bottom__link"><hr noshade><span>03</span> About</a></div>
-                      <div class="col-3 header-nav-bottom__divider"><a href="#" class="header-nav-bottom__link"><hr noshade><span>04</span> Contacts</a></div>
-                    </nav>
                 </div>
+                
+                <!-- carousel-item -->
+                
+                <div class="slider-item carousel-item">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="header-title">
+                                <div class="header-title__top">
+                                    Creative Template
+                                </div>
+                                <div class="header-title__bottom">
+                                    Welcome<br>to MoGo
+                                </div>
+                                <hr class="header-title__divider">
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <a class="header-btn__link" href="#">Learn more</a>
+                        </div>
+                    </div>
                 </div>
+                
+                <!-- carousel-item -->
+                
+                <div class="slider-item carousel-item">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="header-title">
+                                <div class="header-title__top">
+                                    Creative Template
+                                </div>
+                                <div class="header-title__bottom">
+                                    Welcome<br>to MoGo
+                                </div>
+                                <hr class="header-title__divider">
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <a class="header-btn__link" href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- carousel-indicators -->
+                
+                <div class="m-section-indicators">
+                   <ol class="carousel-indicators">
+                    <a href="#" class="ms-indicators__link active"><li data-target="#carousel-ndicators" data-slide-to="0"></li>
+                    <span>01</span> Intro</a>
+                    <a href="#" class="ms-indicators__link"><li data-target="#carousel-ndicators" data-slide-to="1"></li>
+                    <span>02</span> Work</a>
+                    <a href="#" class="ms-indicators__link"><li data-target="#carousel-ndicators" data-slide-to="2"></li>
+                    <span>03</span> About</a>
+                    <a href="#" class="ms-indicators__link"><li data-target="#carousel-ndicators" data-slide-to="3"></li>
+                    <span>04</span> Contacts</a>
+                  </ol>
+              </div> 
+              </div>
+
+        </div>
+
+          
+          
           
           </div>
 
@@ -89,36 +179,30 @@
             <p class="col-10 text-center section-1__about-us">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div class="row">
-            <div class="col-4">
-                <div class="media-item">
-                    <div class="media-item__img">
-                        <img src="img/workplace_1.png" alt="">
-                    </div>
-                    <div class="media-item__addinfo">
-                     <span>super team</span>
-                      </div>
+            <div class="col media-item">
+                <div class="media-item__img">
+                    <img class="img-fluid" src="img/workplace_1.jpg" alt="">
+                </div>
+                <div class="media-item__addinfo">
+                    <span>super team</span>
                 </div>
             </div>
 
-            <div class="col-4">
-                <div class="media-item">
-                    <div class="media-item__img">
-                        <img src="img/workplace_2.png" alt="">
-                    </div>
-                    <div class="media-item__addinfo">
-                     <span>super team</span>
-                      </div>
+            <div class="col media-item">
+                <div class="media-item__img">
+                    <img class="img-fluid" src="img/workplace_2.jpg" alt="">
+                </div>
+                <div class="media-item__addinfo">
+                    <span>super team</span>
                 </div>
             </div>
 
-            <div class="col-4">
-                <div class="media-item">
-                    <div class="media-item__img">
-                        <img src="img/workplace_3.png" alt="">
-                    </div>
-                    <div class="media-item__addinfo">
-                     <span>super team</span>
-                      </div>
+            <div class="col media-item">
+                <div class="media-item__img">
+                    <img class="img-fluid" src="img/workplace_3.jpg" alt="">
+                </div>
+                <div class="media-item__addinfo">
+                    <span>super team</span>
                 </div>
             </div>
         </div>
@@ -129,23 +213,23 @@
     <div class="facts">
         <div class="container">
             <div class="row justify-content-between text-center">
-                <div class="col-2">
+                <div class="col">
                     <div class="facts__numbers">42</div>
                     <span>Web Design Projects</span>
                 </div>
-                <div class="col-2">
+                <div class="col">
                     <div class="facts__numbers">123</div>
                     <span>happy client</span>
                 </div>
-                <div class="col-2">
+                <div class="col">
                     <div class="facts__numbers">15</div>
                     <span>award winner</span>
                 </div>
-                <div class="col-2">
+                <div class="col">
                     <div class="facts__numbers">99</div>
                     <span>cup of coffee</span>
                 </div>
-                <div class="col-2">
+                <div class="col">
                     <div class="facts__numbers">24</div>
                     <span>members</span>
                 </div>
@@ -245,10 +329,10 @@
                </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col">
                     <img src="img/photographer.png" alt="">
                 </div>
-                <div class="col-6">
+                <div class="col">
             
         <!-- Start accordion-->
                    
