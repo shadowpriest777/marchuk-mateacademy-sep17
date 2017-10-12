@@ -397,9 +397,39 @@ p{
     font-size: 24px;
     font-family: 'Kaushan Script', sans-serif;
 }
+.section-5-slider__item-cite::before{
+    content: "";
+    display: block;
+    float: left;
+    width: 60px;
+	height: 3px;
+	background-color: red;
+	margin: 15px;
+}
+
 
 /* SECTION-6 */
-
+.section-6{
+    padding-bottom: 120px;
+}
 .media-item__links{
-    
+    flex-wrap: nowrap;
+}
+.media-item__links a{
+    background: #fce38a;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    color: #f38181;
+}
+.media-item__links-fb{
+   
+}
+.media-item__links a:hover{
+    background: #f38181;
+    color: #fff;
+}
+.media-item__links a i{
+    margin: auto;
+    font-size: 30px;
 }
