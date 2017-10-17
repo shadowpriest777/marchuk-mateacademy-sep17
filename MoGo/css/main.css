@@ -14,6 +14,7 @@ a:active,
 a:visited,
 a:focus{
     text-decoration: none;
+    color: #fff;
 }
 p{
     color: #999999;
@@ -40,13 +41,12 @@ p{
 .section-header{
     color: #333333; 
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 26px;
 }
 .section-header__top{
-    margin-top: 110px;
     font-size: 24px;
     font-family: 'Kaushan Script', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
 }
 .section-header__bottom{
     font-size: 30px;
@@ -59,6 +59,7 @@ p{
     height: 3px;
     background-color: #f38181;
     border: none;
+    margin-top: 28px;
 }
 
 /*####################*/
@@ -76,11 +77,12 @@ p{
     line-height: 34px;
     z-index: 999;
 }
-.header-logo a{
+.header-logo{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 30px;
+    line-height: 20px;
 }
 .header-menu{
     list-style: none;
@@ -88,7 +90,7 @@ p{
 }
 .header-menu__item{
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 27px;
 }
 .header-menu__link{
     color: #fff;
@@ -99,9 +101,6 @@ p{
 .header-menu__link:hover{
     color: #fce38a;
     text-decoration: none;
-}
-.header-menu__link:visited{
-    color: #fff;
 }
 .header-menu__link:after {
     display: block;
@@ -145,7 +144,7 @@ p{
     text-align: center;
 }
 .header-title__top{
-    margin-top: 220px;
+    margin-top: 215px;
     font-size: 72px;
     font-family: 'Kaushan Script', sans-serif;
 }
@@ -155,21 +154,21 @@ p{
     font-weight: 700;
     text-transform: uppercase;
     line-height: 0.9;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 .header-title__divider{
     width: 60px;
     height: 3px;
     background-color: #fff;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .header-btn__link{
     color: #fff;
-    padding: 12px 30px;
+    padding: 7px 30px;
     font-size: 14px;
     font-weight: 700;
     border: 3px solid #fff;
-    margin-top: 40px;
+    margin-top: 30px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
@@ -178,15 +177,16 @@ p{
     border: 3px solid #fce38a;
 }
 .main-section__indicators ol{
-    bottom: 48px;
+    bottom: 59px;
     line-height: 60px;
 }
 .indicators__link{
-    width: 23%;
+    width: 21%;
     height: 3px;
     margin: 0 15px;
     background-color: #fff;
     font-size: 18px;
+    text-transform: uppercase;
     color: #fff;
 }
 .indicators__link:hover{
@@ -194,6 +194,7 @@ p{
 }
 .indicators__link span{
     font-weight: bold;
+    font-size: 24px;
 }
 .main-section__indicators li{
     margin: 0;
@@ -208,10 +209,11 @@ p{
 /* SECTION-1 */
 
 .section-1{
-    padding-bottom: 110px;
+    padding: 88px 0 75px;
+    
 }
 .section-1__about-us{
-    margin-bottom: 84px;
+    margin-bottom: 100px;
 }
 .media-item{
     position: relative;
@@ -264,7 +266,7 @@ p{
     display: block;
 }
 .facts{
-    padding: 70px;
+    padding: 65px 0 80px;
     background-color: #95e1d3;
     color: #fff;
     font-size: 14px;
@@ -279,7 +281,10 @@ p{
 /* SECTION-2 */
 
 .section-2{
-    padding-bottom: 60px;
+    padding: 106px 0;
+}
+.services{
+    padding: 23px;
 }
 .services h2{
     padding-left: 60px;
@@ -289,7 +294,6 @@ p{
 }
 .services__photography {
     background-image: url(../img/alarm.png);
-
 }
 .services__web-design{
     background-image: url(../img/line_graph.png);
@@ -311,15 +315,16 @@ p{
 /* SECTION-3 */
 
 .section-3{
+    padding-top: 84px;
     background-image: url(../img/lake-bg.jpg);
     background-size: cover;
     background-position: center;
 }
 .devices {
     position: relative;
-    margin-top: -13px;
+    margin-top: -35px;
+    right: 25px;
 }
-
 .iphone {
     position: absolute;
     bottom: -90px;
@@ -329,7 +334,7 @@ p{
 /* SECTION-4 */
 
 .section-4 {
-    padding-bottom: 90px;
+    padding: 105px 0 75px;
 }
 .accordion-item{
     margin-bottom: 10px;
@@ -393,8 +398,7 @@ p{
 
 /* SECTION-5 */
 
-.section-5,
-.section-9{
+.section-5{
     padding: 70px 0;
     background-color: #f8f8f8;
 }
@@ -444,7 +448,7 @@ p{
 /* SECTION-6 */
 
 .section-6{
-    padding-bottom: 120px;
+    padding: 95px 25px 75px;
 }
 .media-item__links{
     flex-wrap: nowrap;
@@ -484,7 +488,7 @@ p{
     color: #999999;
 }
 .section-7{
-    padding: 60px 0;
+    padding: 75px 0;
     background-color: #f8f8f8;
 }
 .brands{
@@ -497,6 +501,7 @@ p{
 /*WORKS SECTION*/
 
 .section-8 {
+    padding-top: 90px;
     max-width: 1915px;
     margin: 0 auto;
 }
@@ -516,7 +521,10 @@ p{
 }
 
 /*section-9*/
-
+.section-9{
+    padding: 120px;
+    background-color: #f8f8f8;
+}
 .client{
     border: none;
     width: 200px;
@@ -532,11 +540,15 @@ p{
 /*section-10*/
 
 .section-10{
+    padding: 115px;
     background-image: url(../img/mountains-bg.jpg);
     background-size: cover;
     background-position: center;
 }
-.team-foto{
+.clients{
+    padding: 50px 0 70px;
+}
+.client-foto{
     width: 120px;
 	height: 120px;
 	border-radius: 100%;
@@ -547,7 +559,7 @@ p{
 /*section-11*/
 
 .section-11{
-    padding-bottom: 115px;
+    padding: 105px 0 115px;
 }
 .blog-item{
     position: relative;
@@ -609,21 +621,23 @@ p{
 }
 
 .footer-content{
-    padding: 70px 0 50px;
+    padding: 78px 0 50px;
+    border-bottom: 1px solid #e5e5e5;
 }
 .footer-logo{
     color: #cccccc;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 46px;
+    line-height: 27px;
 }
 .footer-logo:hover{
     color: #f38181;
 }
 .footer-text{
-    padding: 15px;
+    padding: 33px 10px;
     padding-left: 0;
+    line-height: 24px;
 }
 .followers{
     font-size: 14px;
@@ -632,13 +646,18 @@ p{
 }
 .followers span{
     font-weight: bold;
+    font-size: 18px;
 }
 .follow-us a{
     color: #95e1d3;
+    font-size: 18px;
     margin: 0 6px;
 }
 .follow-us a:hover{
     color: #f38181;
+}
+.input-group {
+    margin-top: 35px;
 }
 .mail{
     width: 228px;
@@ -673,8 +692,11 @@ p{
     color: #333333;
     font-family: 'Montserrat', sans-serif;
 }
+.footer-insta-pic{
+    padding: 20px 16px;
+}
 .footer-insta-pic img{
-    padding: 2px 0;
+    padding: 1px 0.5px;
 }
 .blogs_descr{
     font-size: 12px;
@@ -692,6 +714,8 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 .footer-insta__view-more{
+    display: block;
+    padding-top: 15px;
     color: #333333;
 }
 .footer-insta__view-more:hover{
@@ -699,7 +723,7 @@ p{
 }
 .footer-our-site-created{
     text-transform: none;
-    border-top: 1px solid #e5e5e5;
+    padding-top: 15px;
 }
 .footer-our-site-created span{
     color: #f38181;
