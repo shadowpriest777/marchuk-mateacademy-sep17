@@ -12,7 +12,27 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+.main-section__item{
+    min-height: 600px;
+    height: 100vh;
+}
+.header-title__top{
+    margin-top: 100px;
+    font-size: 62px;
+}
+.header-title__bottom{
+    font-size: 100px;
+    line-height: 0.9;
+    padding: 10px 0;
+}
+.header-title__divider{
+    margin-top: 20px;
+}
+.header-btn__link{
+    padding: 12px 30px;
+    font-size: 14px;
+    margin-top: 20px;
+}
 }
 
 /* Small Devices, Tablets */

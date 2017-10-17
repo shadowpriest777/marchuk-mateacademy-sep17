@@ -487,7 +487,13 @@ p{
     padding: 60px 0;
     background-color: #f8f8f8;
 }
-
+.brands{
+    height: 130px;
+    background-image: url(../img/brands.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 /*WORKS SECTION*/
 
 .section-8 {
