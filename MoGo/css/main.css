@@ -1,5 +1,8 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
+/*################*/
 /* GENERAL STYLES */
+/*################*/
 
 html, body {
     height: 100%;
@@ -8,14 +11,28 @@ html, body {
 a,
 a:hover,
 a:active,
-a:visited{
+a:visited,
+a:focus{
     text-decoration: none;
-    color: #fff;
 }
 p{
     color: #999999;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+}
+
+/*icons in section-2*/
+
+.the-icons {
+    height: 32px;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+}
+.the-icons h2{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*block section-header*/
@@ -44,6 +61,11 @@ p{
     border: none;
 }
 
+/*####################*/
+/* END GENERAL STYLES */
+/*####################*/
+
+
 /*HEADER*/
 
 .header{
@@ -54,7 +76,7 @@ p{
     line-height: 34px;
     z-index: 999;
 }
-.header-logo{
+.header-logo a{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -77,6 +99,9 @@ p{
 .header-menu__link:hover{
     color: #fce38a;
     text-decoration: none;
+}
+.header-menu__link:visited{
+    color: #fff;
 }
 .header-menu__link:after {
     display: block;
@@ -162,6 +187,10 @@ p{
     margin: 0 15px;
     background-color: #fff;
     font-size: 18px;
+    color: #fff;
+}
+.indicators__link:hover{
+    color: #fff;
 }
 .indicators__link span{
     font-weight: bold;
@@ -189,6 +218,9 @@ p{
 }
 .media-item__img {
     position: relative;
+}
+.media-item__pic{
+    width: 100%;
 }
 .media-item:hover .media-item__img {
     -webkit-box-shadow: 10px 10px 0 #95e1d3;
@@ -257,33 +289,22 @@ p{
 }
 .services__photography {
     background-image: url(../img/alarm.png);
-    background-repeat: no-repeat;
-    margin-left: 30px;
+
 }
 .services__web-design{
     background-image: url(../img/line_graph.png);
-    background-repeat: no-repeat;
-    margin-left: 30px;
 }
 .services__creativity {
     background-image: url(../img/computer_ok.png);
-    background-repeat: no-repeat;
-    margin-left: 30px;
 }
 .services__seo {
     background-image: url(../img/book.png);
-    background-repeat: no-repeat;
-    margin-left: 30px;
 }
 .services__css-html {
     background-image: url(../img/home.png);
-    background-repeat: no-repeat;
-    margin-left: 30px;
 }
 .services__digital {
     background-image: url(../img/digital.png);
-    background-repeat: no-repeat;
-    margin-left: 30px;
 }
 
 
@@ -321,15 +342,25 @@ p{
     color: #333333;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
 }
-.accordion-item__link:hover{
+.card-header .accordion-item__link:after {
+    font-family: 'Glyphicons Halflings'; 
+    content: "\e113"; 
+    float: right;
+    color: #cccccc;
+}
+.card-header .accordion-item__link.collapsed:after {
+    content: "\e114"; 
+}
+.accordion-item__link:hover,
+.accordion-item__link:focus{
     color: #f38181;
 }
 .accordion-item__icon {
     float: left;
     margin-right: 14px;
 }
-
 .accordion-item__text {
     height: 173px;
     font-style: italic;
@@ -363,7 +394,7 @@ p{
 /* SECTION-5 */
 
 .section-5,
-.section-10{
+.section-9{
     padding: 70px 0;
     background-color: #f8f8f8;
 }
@@ -417,6 +448,8 @@ p{
 }
 .media-item__links{
     flex-wrap: nowrap;
+    position: absolute;
+    transform: translate( -50%, -100% );
 }
 .media-item__links a{
     background: #fce38a;
@@ -457,7 +490,7 @@ p{
 
 /*WORKS SECTION*/
 
-.section-9 {
+.section-8 {
     max-width: 1915px;
     margin: 0 auto;
 }
@@ -476,7 +509,7 @@ p{
     margin-top: 10px;
 }
 
-/*section-10*/
+/*section-9*/
 
 .client{
     border: none;
@@ -486,13 +519,13 @@ p{
     margin-right: 30px;
     padding: 0;
 }
-.section-10 .quote-slider__item-quote{
+.section-9 .quote-slider__item-quote{
     transform: translateY(25%);
 }
 
-/*section-11*/
+/*section-10*/
 
-.section-11{
+.section-10{
     background-image: url(../img/mountains-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -505,9 +538,9 @@ p{
     padding: 0;
 }
 
-/*section-12*/
+/*section-11*/
 
-.section-12{
+.section-11{
     padding-bottom: 115px;
 }
 .blog-item{
@@ -544,20 +577,33 @@ p{
     font-style: italic;
 }
 
-/*section-13*/
+/*section-12*/
 
-.section-13{
+.section-12{
     background-image: url(../img/map_bg.jpg);
     background-size: cover;
     background-position: center;
+    transition: 0.5s;
+}
+.section-12:hover{
+    filter: grayscale(100%) sepia(0.1);
+    -webkit-filter: grayscale(100%) sepia(0.1);
+}
+.section-12:hover .map-item-group{
+    transform: scale(1.2);
 }
 .map-item-group{
+        transition: 0.5s;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding: 55px;
     font-size: 24px;
     text-transform: uppercase;
     color: #f38181;
+}
+
+.footer-content{
+    padding: 70px 0 50px;
 }
 .footer-logo{
     color: #cccccc;
@@ -567,7 +613,7 @@ p{
     line-height: 30px;
 }
 .footer-logo:hover{
-    color: #cccccc;
+    color: #f38181;
 }
 .footer-text{
     padding: 15px;
@@ -581,9 +627,12 @@ p{
 .followers span{
     font-weight: bold;
 }
-.test a{
+.follow-us a{
     color: #95e1d3;
     margin: 0 6px;
+}
+.follow-us a:hover{
+    color: #f38181;
 }
 .mail{
     width: 228px;
@@ -605,13 +654,14 @@ p{
     font-weight: bold;
 }
 .mail__btn:hover {
-	background-color: #d2f6ef;
-    color: #95e1d3;
-    border: 1px solid #95e1d3;
+	background-color: #fff;
+    color: #f38181;
+    border: 2px solid #f38181;
     cursor: pointer;
 }
 .footer-blogs,
-.footer-insta{
+.footer-insta,
+.footer-our-site-created{
     font-size: 14px;
     text-transform: uppercase;
     color: #333333;
@@ -627,10 +677,24 @@ p{
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
 }
-.blogs_descr span{
+.blogs_descr span,
+.footer-insta__view-more{
     font-size: 13px;
     text-transform: none;
     color: #999999;
     font-style: italic;
     font-family: 'Roboto', sans-serif;
+}
+.footer-insta__view-more{
+    color: #333333;
+}
+.footer-insta__view-more:hover{
+    color: #f38181;
+}
+.footer-our-site-created{
+    text-transform: none;
+    border-top: 1px solid #e5e5e5;
+}
+.footer-our-site-created span{
+    color: #f38181;
 }

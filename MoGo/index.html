@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+
 </head>
 
 <body>
@@ -22,7 +23,13 @@
                       <a href="#">MoGo</a>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <nav>
+                       
+                       <nav class="navbar-expand-lg navbar-light ">
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="header-menu">
                                 <li class="header-menu__item"><a class="header-menu__link" href="#">About</a></li>
                                 <li class="header-menu__item"><a class="header-menu__link" href="#">service</a></li>
@@ -30,7 +37,9 @@
                                 <li class="header-menu__item"><a class="header-menu__link" href="#">blog</a></li>
                                 <li class="header-menu__item"><a class="header-menu__link" href="#">contact</a></li>
                             </ul>
+                          </div>
                         </nav>
+
                     <div class="header-icons">
                         <img src="icons/SHOPPING-CART.svg">
                         <img src="icons/MAGNIFYING-GLASS.svg"><form class="hide"><input type="search" placeholder="Search"></form>
@@ -175,9 +184,9 @@
             <p class="col-10 text-center section-1__about-us">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div class="row">
-            <div class="col media-item">
-                <div class="media-item__img">
-                    <img class="img-fluid" src="img/workplace_1.jpg" alt="">
+            <div class="col-lg-4 col-md-4 col-xs-12 media-item">
+                <div class="media-item__img mb-5">
+                    <img class="w-100" src="img/workplace_1.jpg" alt="">
                 </div>
                 <div class="media-item__addinfo">
                     <img src="icons/team.svg" alt="">
@@ -185,9 +194,9 @@
                 </div>
             </div>
 
-            <div class="col media-item">
-                <div class="media-item__img">
-                    <img class="img-fluid" src="img/workplace_2.jpg" alt="">
+            <div class="col-lg-4 col-md-4 col-xs-12 media-item">
+                <div class="media-item__img mb-5">
+                    <img class="w-100" src="img/workplace_2.jpg" alt="">
                 </div>
                 <div class="media-item__addinfo">
                     <img src="icons/team.svg" alt="">
@@ -195,9 +204,9 @@
                 </div>
             </div>
 
-            <div class="col media-item">
+            <div class="col-lg-4 col-md-4 col-xs-12 media-item">
                 <div class="media-item__img">
-                    <img class="img-fluid" src="img/workplace_3.jpg" alt="">
+                    <img class="w-100" src="img/workplace_3.jpg" alt="">
                 </div>
                 <div class="media-item__addinfo">
                     <img src="icons/team.svg" alt="">
@@ -212,23 +221,23 @@
     <div class="facts">
         <div class="container">
             <div class="row justify-content-between text-center">
-                <div class="col">
+                <div class="col-lg-2 col-md-12">
                     <div class="facts__numbers">42</div>
                     <span>Web Design Projects</span>
                 </div>
-                <div class="col">
+                <div class="col-lg-2 col-md-12">
                     <div class="facts__numbers">123</div>
                     <span>happy client</span>
                 </div>
-                <div class="col">
+                <div class="col-lg-2 col-md-12">
                     <div class="facts__numbers">15</div>
                     <span>award winner</span>
                 </div>
-                <div class="col">
+                <div class="col-lg-2 col-md-12">
                     <div class="facts__numbers">99</div>
                     <span>cup of coffee</span>
                 </div>
-                <div class="col">
+                <div class="col-lg-2 col-md-12">
                     <div class="facts__numbers">24</div>
                     <span>members</span>
                 </div>
@@ -253,30 +262,30 @@
         
        <div class="row services">
            <div class="col-lg-4 col-sm-12">
-               <h2 class="services__photography">Photography</h2>
+               <div class="services__photography the-icons"><h2>Photography</h2></div>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
            </div>
            <div class="col-lg-4 col-sm-12">
-               <h2 class="services__web-design">Web Design</h2>
+               <div class="services__web-design the-icons"><h2>Web Design</h2></div>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
            </div>
            <div class="col-lg-4 col-sm-12">
-               <h2 class="services__creativity">Creativity</h2>
+               <div class="services__creativity the-icons"><h2>Creativity</h2></div>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
            </div>
        </div>
        <hr>
-        <div class="row services">
+        <div class="row services pt-4">
            <div class="col-lg-4 col-sm-12">
-               <h2 class="services__seo">seo</h2>
+               <div class="services__seo the-icons"><h2>seo</h2></div>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
            </div>
            <div class="col-lg-4 col-sm-12">
-               <h2 class="services__css-html">Css/Html</h2>
+               <div class="services__css-html the-icons"><h2>Css/Html</h2></div>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
            </div>
            <div class="col-lg-4 col-sm-12">
-               <h2 class="services__digital">digital</h2>
+               <div class="services__digital the-icons"><h2>digital</h2></div>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
            </div>
        </div>
@@ -322,16 +331,16 @@
             </div>
             
 
-            <div class="row justify-content-center section-4-indents">
+            <div class="row justify-content-center indents">
                <div class="col-10 text-center">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                </div>
             </div>
             <div class="row">
-                <div class="col">
-                    <img src="img/photographer.png" alt="">
+                <div class="col-lg-6 col-md-12 text-center">
+                    <img class="w-100 mb-5" src="img/photographer.png" alt="photographer">
                 </div>
-                <div class="col">
+                <div class="col-lg-6 col-md-12">
             
         <!-- Start accordion-->
                    
@@ -342,7 +351,6 @@
                           <h5 class="text-uppercase">
                             <a class="accordion-item__link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               Photography
-                              <span class="accordion-item_arrow arrow_up"></span>
                             </a>
                           </h5>
                         </div>
@@ -359,7 +367,6 @@
                             <h5 class="text-uppercase">
                             <a class="collapsed accordion-item__link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 creativity
-                                <span class="accordion-item_arrow arrow_down"></span>
                             </a>
                           </h5>
                         </div>
@@ -371,16 +378,15 @@
                       </div>
                       <div class="card accordion-item">
                         <div class="card-header accordion-item__header" role="tab" id="headingThree">
-                          <img class="accordion-item__icon" src="icons/BULLSEYE.svg" alt="">
-                          <h5 class="text-uppercase">
+                            <img class="accordion-item__icon" src="icons/BULLSEYE.svg" alt="">
+                            <h5 class="text-uppercase">
                             <a class="collapsed accordion-item__link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                               web design
-                               <span class="accordion-item_arrow arrow_down"></span>
+                                web design
                             </a>
                           </h5>
                         </div>
                         <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-                          <p class="accordion__item-text card-block">
+                          <p class="accordion-item__text card-block">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                           </p>
                         </div>
@@ -452,9 +458,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col media-item">
+            <div class="col-lg-4 col-md-4 col-xs-12 media-item">
                 <div class="media-item__img">
-                    <img class="img-fluid" src="img/worker_1.png" alt="">
+                    <img class="w-100" src="img/worker_1.png" alt="">
                 </div>
                 <div class="media-item__addinfo">
                     <div class="media-item__links row">
@@ -466,15 +472,15 @@
                 </div>
                 <div class="tm_name text-center">
                     Matthew Dix 
-                    <div class="tm_position">
+                    <div class="tm_position mb-5">
                         Graphic Design
                     </div>
                 </div>
             </div>
 
-            <div class="col media-item">
+            <div class="col-lg-4 col-md-4 col-xs-12 media-item">
                 <div class="media-item__img">
-                    <img class="img-fluid" src="img/worker_2.png" alt="">
+                    <img class="w-100" src="img/worker_2.png" alt="">
                 </div>
                 <div class="media-item__addinfo">
                     <div class="media-item__links row">
@@ -486,15 +492,15 @@
                 </div>
                 <div class="tm_name text-center">
                     Christopher Campbell
-                    <div class="tm_position">
+                    <div class="tm_position mb-5">
                         Branding/UX design
                     </div>
                 </div>
             </div>
 
-            <div class="col media-item">
+            <div class="col-lg-4 col-md-4 col-xs-12 media-item">
                 <div class="media-item__img">
-                    <img class="img-fluid" src="img/worker_3.png" alt="">
+                    <img class="w-100" src="img/worker_3.png" alt="">
                 </div>
                 <div class="media-item__addinfo">
                     <div class="media-item__links row">
@@ -547,7 +553,7 @@
     
    <!-- /.section-8 -->
    
-       <div class="section-9 row">
+       <div class="section-8 row">
             <div class="col-3 p-0">
                 <div class="media-item">
                     <div class="media-item__img work-item">
@@ -656,11 +662,11 @@
             </div>
         </div>
    
-   <!-- /.section-9 -->
+   <!-- /.section-8 -->
    
-       <section class="section-10">
+       <section class="section-9">
         <div class="container">
-            <div id="carousel-section-10__controls" class="carousel slide" data-ride="carousel">
+            <div id="carousel-section-9__controls" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                
                 <div class="quote-slider__item carousel-item active">
@@ -692,9 +698,9 @@
         </div>
     </section>
     
-    <!-- /.section-10 -->
+    <!-- /.section-9 -->
     
-   <section class="section-11">
+   <section class="section-10">
        <div class="container pb-5">
             <div class="row justify-content-center">
                 <div class="section-header">
@@ -708,9 +714,9 @@
                 </div>
             </div>
             
-        <div class="row">
+        <div class="row justify-content-center">
             <img class="team-foto mx-4" src="img/team_1.jpg" alt="">
-            <div class="col">
+            <div class="col-lg-4 col-sm-12">
                 <div class="tm_name p-0 clearfix">
                     Matthew Dix 
                     <div class="tm_position">
@@ -721,7 +727,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
             </div>
             <img class="team-foto mx-4" src="img/team_2.jpg" alt="">
-            <div class="col">
+            <div class="col-lg-4 col-sm-12">
                 <div class="tm_name p-0 clearfix">
                     Nick Karvounis
                     <div class="tm_position">
@@ -732,9 +738,9 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
             </div>
         </div> 
-        <div class="row py-5">
+        <div class="row justify-content-center py-5">
             <img class="team-foto mx-4" src="img/team_3.jpg" alt="">
-            <div class="col">
+            <div class="col-lg-4 col-sm-12">
                 <div class="tm_name p-0 clearfix">
                     Jaelynn Castillo 
                     <div class="tm_position">
@@ -745,7 +751,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
             </div>
             <img class="team-foto mx-4" src="img/team_4.jpg" alt="">
-            <div class="col">
+            <div class="col-lg-4 col-sm-12">
                 <div class="tm_name p-0 clearfix">
                     Mike Petrucci
                     <div class="tm_position">
@@ -759,9 +765,9 @@
        </div>
    </section>
    
-    <!-- /.section-11 -->
+    <!-- /.section-10 -->
 
-    <section class="container section-12">
+    <section class="container section-11">
         <div class="row justify-content-center">
             <div class="section-header">
                 <div class="section-header__top">
@@ -775,13 +781,13 @@
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col-lg-4 col-md-4 col-xs-12">
                 <figure class="blog-item">
                     <div class="blog-item__data">
                         15
                         <div class="blog-item__month">Jan</div>
                     </div>
-                    <img src="img/blog_pic-1.jpg" alt="blog_pic-1">
+                    <img class="w-100" src="img/blog_pic-1.jpg" alt="blog_pic-1">
                     <figcaption>
                         <div class="text-uppercase py-3">Lorem ipsum dolor sit amet</div>
                         <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -796,13 +802,13 @@
                 </div>
             </div>
             
-            <div class="col">
+            <div class="col-lg-4 col-md-4 col-xs-12">
                 <figure class="blog-item">
                     <div class="blog-item__data">
                         14
                         <div class="blog-item__month">Jan</div>
                     </div>
-                    <img src="img/blog_pic-2.jpg" alt="blog_pic-2">
+                    <img class="w-100" src="img/blog_pic-2.jpg" alt="blog_pic-2">
                     <figcaption>
                         <div class="text-uppercase py-3">sed do eiusmod tempor</div>
                         <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -817,13 +823,13 @@
                 </div>
             </div>
             
-            <div class="col">
+            <div class="col-lg-4 col-md-4 col-xs-12">
                 <figure class="blog-item">
                     <div class="blog-item__data">
                         12
                         <div class="blog-item__month">Jan</div>
                     </div>
-                    <img src="img/blog_pic-3.jpg" alt="blog_pic-3">
+                    <img class="w-100" src="img/blog_pic-3.jpg" alt="blog_pic-3">
                     <figcaption>
                         <div class="text-uppercase py-3">incididunt ut labore et dolore</div>
                         <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -840,9 +846,9 @@
         </div>
     </section>
     
-    <!-- /.section-12 -->
-    
-    <div class="section-13">
+    <!-- /.section-11 -->
+    <a href="#">
+    <div class="section-12">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="map-item-group">
@@ -850,26 +856,26 @@
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
                     <div class="map-item__open mt-2">
-                        Open map
+                       Open map
                     </div>
                     <hr class="section-header__divider mb-0">
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- /.section-13 -->
+    </a>
+    <!-- /.section-12 -->
         
     <footer class="footer container">
-        <div class="row py-4 my-5">
-            <div class="col-5">
+        <div class="row footer-content">
+            <div class="col-lg-5">
                 <a href="#" class="footer-logo">
-                  MoGo
+                    MoGo
                 </a>
                 <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                 <div class="followers"><span>15k</span> followers</div>
                 <hr>
-                <div class="test">Follow Us: 
+                <div class="follow-us">Follow Us: 
                     <a href="#"><i class="fa fa-facebook"></i></a>
 					<a href="#"><i class="fa fa-twitter"></i></a>
 					<a href="#"><i class="fa fa-instagram"></i></a>
@@ -884,40 +890,40 @@
                     <button type="submit" class="mail__btn">subscribe</button>
                 </form>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4">
                 <div class="footer-blogs pb-4">blogs</div>
                 <div class="row pb-3">
-                    <div class="col-4">
-                        <img src="img/blog_pic-4.jpg" alt="blog_pic-4">
+                    <div class="col-lg-4">
+                    <a href="#"><img class="" src="img/blog_pic-4.jpg" alt="blog_pic-4"></a>
                     </div>
-                    <div class="col-8 blogs_descr">
-                        <p>Lorem ipsum dolor sit amet,
-                        consectetur adipiscing</p>
+                    <div class="col-lg-8 blogs_descr">
+                        <a href="#"><p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing</p></a>
                         <span>Jan 9, 2016</span>
                     </div>
                 </div>
                 <div class="row py-3">
-                    <div class="col-4">
-                        <img src="img/blog_pic-5.jpg" alt="blog_pic-5">
+                    <div class="col-lg-4">
+                        <a href="#"><img src="img/blog_pic-5.jpg" alt="blog_pic-5"></a>
                     </div>
                     <div class="col-8 blogs_descr">
-                        <p>Lorem ipsum dolor sit amet,
-                        consectetur adipiscing</p>
+                        <a href="#"><p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing</p></a>
                         <span>Jan 9, 2016</span>
                     </div>
                 </div>
                 <div class="row py-3">
-                    <div class="col-4">
-                        <img src="img/blog_pic-6.jpg" alt="blog_pic-6">
+                    <div class="col-lg-4">
+                        <a href="#"><img src="img/blog_pic-6.jpg" alt="blog_pic-6"></a>
                     </div>
                     <div class="col-8 blogs_descr">
-                        <p>Lorem ipsum dolor sit amet,
-                        consectetur adipiscing</p>
+                        <a href="#"><p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing</p></a>
                         <span>Jan 9, 2016</span>
                     </div>
                 </div>
             </div>
-            <div class="col-3 footer-insta-pic">
+            <div class="col-lg-3 footer-insta-pic">
                 <div class="footer-insta pb-4">instagram</div>
                 <img src="img/instagram-1.jpg" alt="">
                 <img src="img/instagram-2.jpg" alt="">
@@ -928,8 +934,11 @@
                 <img src="img/instagram-7.jpg" alt="">
                 <img src="img/instagram-8.jpg" alt="">
                 <img src="img/instagram-9.jpg" alt="">
-                <span>View more photos</span>
+                <a href="#" class="footer-insta__view-more pt-3">View more photos</a>
             </div>
+        </div>
+        <div class="row justify-content-center py-4 footer-our-site-created">
+            © 2016 MoGo free PSD template by&nbsp;<span>Laaqiq</span>
         </div>
     </footer>
    
@@ -967,6 +976,5 @@
             });
         });
     </script>
-
 </body>
 </html>
