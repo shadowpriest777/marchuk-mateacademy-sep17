@@ -453,7 +453,7 @@ p{
 .media-item__links{
     flex-wrap: nowrap;
     position: absolute;
-    transform: translate( -50%, -100% );
+    transform: translate( -50%, -130% );
 }
 .media-item__links a{
     background: #fce38a;
@@ -487,17 +487,14 @@ p{
     font-weight: 300;
     color: #999999;
 }
+
+/*section-7 brands*/
+
 .section-7{
     padding: 75px 0;
     background-color: #f8f8f8;
 }
-.brands{
-    height: 130px;
-    background-image: url(../img/brands.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+
 /*WORKS SECTION*/
 
 .section-8 {
@@ -723,7 +720,7 @@ p{
 }
 .footer-our-site-created{
     text-transform: none;
-    padding-top: 15px;
+    margin: 15px;
 }
 .footer-our-site-created span{
     color: #f38181;
