@@ -340,7 +340,7 @@ p{
     margin-bottom: 10px;
 }
 .accordion-item__header{
-    padding: 14px;
+    padding: 12px;
     background-color: #fff;
 }
 .accordion-item__link{
@@ -374,7 +374,7 @@ p{
     height: 173px;
     font-style: italic;
     padding: 20px;
-    margin-bottom: 0;
+    padding-bottom: 0;
 
 }
 .scroll::-webkit-scrollbar {
