@@ -84,6 +84,7 @@ body{
     background-color: #444444;
     color: #ffffff;
 }
+/*
 .delta::after {
     content: ''; 
     position: absolute;
@@ -100,7 +101,13 @@ body{
     border: 12px solid transparent;
     border-left: 12px solid #444444;
 }
+*/
 
+.delta{
+    position: absolute;
+    -webkit-transform: translate(10%, -10%);
+    transform: translate(10%, -10%);
+}
 @media only screen and (max-width : 685px) {
 
     .container{

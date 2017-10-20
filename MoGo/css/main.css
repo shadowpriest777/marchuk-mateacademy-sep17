@@ -293,22 +293,22 @@ p{
     padding-left: 90px;
 }
 .services__photography {
-    background-image: url(../img/alarm.png);
+    background-image: url(../icons/alarm.svg);
 }
 .services__web-design{
-    background-image: url(../img/line_graph.png);
+    background-image: url(../icons/graph.svg);
 }
 .services__creativity {
-    background-image: url(../img/computer_ok.png);
+    background-image: url(../icons/computer.svg);
 }
 .services__seo {
-    background-image: url(../img/book.png);
+    background-image: url(../icons/book.svg);
 }
 .services__css-html {
-    background-image: url(../img/home.png);
+    background-image: url(../icons/home.svg);
 }
 .services__digital {
-    background-image: url(../img/digital.png);
+    background-image: url(../icons/digital.svg);
 }
 
 
@@ -455,20 +455,20 @@ p{
     position: absolute;
     transform: translate( -50%, -130% );
 }
-.media-item__links a{
-    background: #fce38a;
-    width: 56px;
+
+.inline-svg-icon{
     height: 56px;
-    display: flex;
-    color: #f38181;
+    width: 56px;
+    background-color: #fce38a;
+    fill: #f38181;
 }
-.media-item__links a:hover{
-    background: #f38181;
-    color: #fff;
+.inline-svg-icon:not(.br-none){
+    border-right: 1px solid rgba(243, 129, 129, .5);
 }
-.media-item__links a i{
-    margin: auto;
-    font-size: 30px;
+.inline-svg-icon:hover{
+    background-color: #f38181;
+    fill: #ffffff;
+    cursor: pointer;
 }
 .tm_name,
 .work_name{
