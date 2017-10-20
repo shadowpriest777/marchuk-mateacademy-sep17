@@ -27,7 +27,7 @@ p{
 .the-icons {
     height: 32px;
     background-repeat: no-repeat;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .the-icons h2{
     font-size: 14px;
@@ -448,7 +448,7 @@ p{
 /* SECTION-6 */
 
 .section-6{
-    padding: 95px 25px 75px;
+    padding: 95px 25px 105px;
 }
 .media-item__links{
     flex-wrap: nowrap;
@@ -497,7 +497,7 @@ p{
 /*WORKS SECTION*/
 
 .section-8 {
-    padding-top: 90px;
+    padding-top: 95px;
     max-width: 1915px;
     margin: 0 auto;
 }
@@ -536,7 +536,7 @@ p{
 /*section-10*/
 
 .section-10{
-    padding: 115px;
+    padding: 110px;
     background-image: url(../img/mountains-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -555,7 +555,7 @@ p{
 /*section-11*/
 
 .section-11{
-    padding: 105px 0 115px;
+    padding: 110px 0 115px;
 }
 .blog-item{
     position: relative;
@@ -607,7 +607,7 @@ p{
     transform: scale(1.2);
 }
 .map-item-group{
-        transition: 0.5s;
+    transition: 0.5s;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding: 55px;
@@ -625,13 +625,13 @@ p{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 46px;
-    line-height: 27px;
+    line-height: 30px;
 }
 .footer-logo:hover{
     color: #f38181;
 }
 .footer-text{
-    padding: 33px 10px;
+    padding: 32px 10px;
     padding-left: 0;
     line-height: 24px;
 }
@@ -646,9 +646,8 @@ p{
 }
 .follow-us-icon{
     height: 30px;
-    width: 30px;
-    fill: #95e1d3;
-    margin: -2px;
+    width: 26px;
+    fill: #95e1d3; 
 }
 .follow-us-icon:hover{
     background-color: #f38181;
@@ -657,10 +656,11 @@ p{
 }
 .follow-us{
     float: left;
-    line-height: 24px;
+    padding: 5px 10px;
+    padding-left: 0;
 }
 .input-group {
-    margin-top: 35px;
+    margin-top: 27px;
 }
 .mail{
     width: 228px;
@@ -688,7 +688,7 @@ p{
     cursor: pointer;
 }
 .footer-blogs,
-.footer-insta,
+.footer-insta__text,
 .footer-our-site-created{
     font-size: 14px;
     text-transform: uppercase;
@@ -696,17 +696,26 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 .footer-insta-pic{
-    padding: 20px 16px;
+    padding: 0 16px;
+}
+.footer-insta__text{
+    padding-bottom: 35px;
 }
 .footer-insta-pic img{
     padding: 1px 0.5px;
 }
+.footer-blogs{
+    padding-bottom: 35px;
+}
 .blogs_descr{
+    padding-top: 30px;
+}
+.footer-blogs__text{
     font-size: 12px;
     text-transform: uppercase;
     color: #333333;
     font-family: 'Montserrat', sans-serif;
-    display: inline-block;
+    padding-top: 15px;
 }
 .blogs_descr span,
 .footer-insta__view-more{
@@ -718,7 +727,7 @@ p{
 }
 .footer-insta__view-more{
     display: block;
-    padding-top: 15px;
+    padding: 15px 0;
     color: #333333;
 }
 .footer-insta__view-more:hover{
@@ -726,7 +735,7 @@ p{
 }
 .footer-our-site-created{
     text-transform: none;
-    margin: 15px;
+    margin: 20px;
 }
 .footer-our-site-created span{
     color: #f38181;
