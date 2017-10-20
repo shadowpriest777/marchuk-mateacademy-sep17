@@ -455,17 +455,16 @@ p{
     position: absolute;
     transform: translate( -50%, -130% );
 }
-
-.inline-svg-icon{
+.media-item__links-icon{
     height: 56px;
     width: 56px;
     background-color: #fce38a;
     fill: #f38181;
 }
-.inline-svg-icon:not(.br-none){
+.media-item__links-icon:not(.br-none){
     border-right: 1px solid rgba(243, 129, 129, .5);
 }
-.inline-svg-icon:hover{
+.media-item__links-icon:hover{
     background-color: #f38181;
     fill: #ffffff;
     cursor: pointer;
@@ -645,13 +644,20 @@ p{
     font-weight: bold;
     font-size: 18px;
 }
-.follow-us a{
-    color: #95e1d3;
-    font-size: 18px;
-    margin: 0 6px;
+.follow-us-icon{
+    height: 30px;
+    width: 30px;
+    fill: #95e1d3;
+    margin: -2px;
 }
-.follow-us a:hover{
-    color: #f38181;
+.follow-us-icon:hover{
+    background-color: #f38181;
+    fill: #ffffff;
+    cursor: pointer;
+}
+.follow-us{
+    float: left;
+    line-height: 24px;
 }
 .input-group {
     margin-top: 35px;
