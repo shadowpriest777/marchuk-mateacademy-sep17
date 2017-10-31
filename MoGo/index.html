@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/media.min.css">
 
 </head>
 
@@ -20,9 +20,9 @@
           <div class="container">
                <div class="d-flex justify-content-between">
                     <a class="header-logo" href="#">MoGo</a>
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex">
                        
-                       <nav class="navbar-expand-lg navbar-light ">
+                       <nav class="navbar-expand-lg navbar-light">
                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
@@ -37,11 +37,12 @@
                             </ul>
                           </div>
                         </nav>
-
-                    <div class="header-icons">
-                        <img src="icons/SHOPPING-CART.svg">
-                        <img class="pr-0" src="icons/MAGNIFYING-GLASS.svg"><form class="hide"><input type="search" placeholder="Search"></form>
-                    </div>
+                        <span class="cart-icon"></span>
+												<div class="search-wrapper">
+													<span class="find-icon"></span>
+													<input type="text" class="site-search" name="header-search" id="search">
+											</div>
+                    
                     </div>
 
                 </div>
@@ -610,10 +611,10 @@
             <div class="col-3 p-0">
                 <div class="media-item">
                     <div class="media-item__img work-item">
-                        <img class="img-fluid" src="img/work-1.jpg" alt="">
+                        <img class="img-fluid" src="img/work-1.jpg" alt="work">
                     </div>
                     <div class="media-item__addinfo">
-                        <img src="icons/picture-w.svg" alt="">
+                        <img src="icons/picture-w.svg" alt="picture">
                         <div class="work_name text-center">
                             creatively designed
                             <div class="work_descr">
@@ -624,40 +625,10 @@
                 </div>
                 <div class="media-item">
                     <div class="media-item__img work-item">
-                        <img class="img-fluid" src="img/work-5.jpg" alt="">
+                        <img class="img-fluid" src="img/work-5.jpg" alt="work">
                     </div>
                     <div class="media-item__addinfo">
-                        <img src="icons/picture-w.svg" alt="">
-                        <div class="work_name text-center">
-                            creatively designed
-                            <div class="work_descr">
-                                Lorem ipsum dolor sit
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 p-0">
-                <div class="media-item">
-                    <div class="media-item__img work-item">
-                        <img class="img-fluid" src="img/work-2.jpg" alt="">
-                    </div>
-                    <div class="media-item__addinfo">
-                        <img src="icons/picture-w.svg" alt="">
-                        <div class="work_name text-center">
-                            creatively designed
-                            <div class="work_descr">
-                                Lorem ipsum dolor sit
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="media-item">
-                    <div class="media-item__img work-item">
-                        <img class="img-fluid" src="img/work-6.jpg" alt="">
-                    </div>
-                    <div class="media-item__addinfo">
-                        <img src="icons/picture-w.svg" alt="">
+                        <img src="icons/picture-w.svg" alt="picture">
                         <div class="work_name text-center">
                             creatively designed
                             <div class="work_descr">
@@ -670,10 +641,24 @@
             <div class="col-3 p-0">
                 <div class="media-item">
                     <div class="media-item__img work-item">
-                        <img class="img-fluid" src="img/work-3.jpg" alt="">
+                        <img class="img-fluid" src="img/work-2.jpg" alt="work">
                     </div>
                     <div class="media-item__addinfo">
-                        <img src="icons/picture-w.svg" alt="">
+                        <img src="icons/picture-w.svg" alt="picture">
+                        <div class="work_name text-center">
+                            creatively designed
+                            <div class="work_descr">
+                                Lorem ipsum dolor sit
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <div class="media-item__img work-item">
+                        <img class="img-fluid" src="img/work-6.jpg" alt="work">
+                    </div>
+                    <div class="media-item__addinfo">
+                        <img src="icons/picture-w.svg" alt="picture">
                         <div class="work_name text-center">
                             creatively designed
                             <div class="work_descr">
@@ -686,7 +671,23 @@
             <div class="col-3 p-0">
                 <div class="media-item">
                     <div class="media-item__img work-item">
-                        <img class="img-fluid" src="img/work-4.jpg" alt="">
+                        <img class="img-fluid" src="img/work-3.jpg" alt="work">
+                    </div>
+                    <div class="media-item__addinfo">
+                        <img src="icons/picture-w.svg" alt="picture">
+                        <div class="work_name text-center">
+                            creatively designed
+                            <div class="work_descr">
+                                Lorem ipsum dolor sit
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-0">
+                <div class="media-item">
+                    <div class="media-item__img work-item">
+                        <img class="img-fluid" src="img/work-4.jpg" alt="work">
                     </div>
                     <div class="media-item__addinfo">
                         <img src="icons/picture-w.svg" alt="">
@@ -700,10 +701,10 @@
                 </div>
                 <div class="media-item">
                     <div class="media-item__img work-item">
-                        <img class="img-fluid" src="img/work-7.jpg" alt="">
+                        <img class="img-fluid" src="img/work-7.jpg" alt="work">
                     </div>
                     <div class="media-item__addinfo">
-                        <img src="icons/picture-w.svg" alt="">
+                        <img src="icons/picture-w.svg" alt="picture">
                         <div class="work_name text-center">
                             creatively designed
                             <div class="work_descr">
@@ -770,7 +771,7 @@
         <div class="section-10__indents row justify-content-center">
             <div class="col-lg-6">
                <div class="row d-flex justify-content-around">
-                    <img class="client-foto" src="img/client_1.jpg" alt="">
+                    <img class="client-foto" src="img/client_1.jpg" alt="client-foto">
                     <div class="col-lg-8 col-sm-12">
                         <div class="client-name p-0">
                             Matthew Dix 
@@ -785,7 +786,7 @@
             </div>
             <div class="col-lg-6">
                <div class="row d-flex justify-content-around">
-                    <img class="client-foto" src="img/client_2.jpg" alt="">
+                    <img class="client-foto" src="img/client_2.jpg" alt="client-foto">
                     <div class="col-lg-8 col-sm-12 pl-0">
                         <div class="client-name p-0">
                             Nick Karvounis
@@ -802,7 +803,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                <div class="row d-flex justify-content-around">
-                    <img class="client-foto" src="img/client_3.jpg" alt="">
+                    <img class="client-foto" src="img/client_3.jpg" alt="client-foto">
                     <div class="col-lg-8 col-sm-12">
                         <div class="client-name p-0">
                             Jaelynn Castillo 
@@ -817,7 +818,7 @@
             </div>
             <div class="col-lg-6">
                <div class="row d-flex justify-content-around">
-                    <img class="client-foto" src="img/client_4.jpg" alt="">
+                    <img class="client-foto" src="img/client_4.jpg" alt="client-foto">
                     <div class="col-lg-8 col-sm-12 pl-0">
                         <div class="client-name p-0">
                            Mike Petrucci
@@ -1012,19 +1013,19 @@
             <div class="col-lg-3 footer-insta-pic">
                 <div class="row footer-insta__text">instagram</div>
                 <div class="row">
-                    <img src="img/instagram-1.jpg" alt="">
-                    <img src="img/instagram-2.jpg" alt="">
-                    <img src="img/instagram-3.jpg" alt="">
+                    <img src="img/instagram-1.jpg" alt="insta-post-1">
+                    <img src="img/instagram-2.jpg" alt="insta-post-2">
+                    <img src="img/instagram-3.jpg" alt="insta-post-3">
                 </div>
                 <div class="row">
-                    <img src="img/instagram-4.jpg" alt="">
-                    <img src="img/instagram-5.jpg" alt="">
-                    <img src="img/instagram-6.jpg" alt="">
+                    <img src="img/instagram-4.jpg" alt="insta-post-4">
+                    <img src="img/instagram-5.jpg" alt="insta-post-5">
+                    <img src="img/instagram-6.jpg" alt="insta-post-6">
                 </div>
                 <div class="row">
-                    <img src="img/instagram-7.jpg" alt="">
-                    <img src="img/instagram-8.jpg" alt="">
-                    <img src="img/instagram-9.jpg" alt="">
+                    <img src="img/instagram-7.jpg" alt="insta-post-7">
+                    <img src="img/instagram-8.jpg" alt="insta-post-8">
+                    <img src="img/instagram-9.jpg" alt="insta-post-9">
                 </div>
                 <a href="#" class="footer-insta__view-more">View more photos</a>
             </div>
