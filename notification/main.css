@@ -43,27 +43,24 @@ body{
     line-height: 1.7;
     margin: 0px;
 }
-.links {
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 17px 24px;
-    border-radius: 3px;
+.btn-group {
+	padding: 17px 24px;
 }
-.link__message,
-.link__like{
-    display: inline-block;
-    text-decoration: none;
+
+.btn{
+		font-size: 14px;
+	  text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    border: none;
     border-radius: 3px;
-    text-align: center;
-    line-height: 40px;
+	  padding: 12px 19px;
 }
-.link__message{
-    width: 107px;
+.btn-message{
     background-color: #00bcd4;
     color: #fff;
 }
-.link__like{
-    width: 121px;
+.btn-like{
     background-color: #e0e0e0;
     color: #333333;
     margin-left: 12px;
