@@ -1,0 +1,82 @@
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: 2px solid $input-border;
+  border-radius: $input-rounded;
+	outline: none;
+
+	&--focus{
+		opacity: 0.4;
+		border-color: #999;
+		
+		&:focus {
+			outline: none;
+			opacity: 1;
+			border-color: $input-border;
+			color: #383737;
+		+ .form-control--icon{
+			color: #383737;
+			}
+		}
+	}
+	&--icon{
+		position: absolute;
+		color:#c6ccd2;
+		left:17px;
+		top:16px;
+		z-index:1;
+	}
+
+	&--light::placeholder{
+	color: $input-color-placeholder-light;
+	}
+	
+	&--dark{
+	color: $input-color-placeholder-dark;
+}
+	
+	&--subscribing{
+		margin-bottom: 0;	
+		max-width: 75%;
+	}
+}
+.inner-addon {
+  position: relative;
+}
+.left-addon input {
+  padding-left: 45px;
+}
+.form-group{
+	margin-bottom: 1.5rem;
+}
+
+.checkbox-wrap{
+	text-align: left;
+	
+	.checkbox__input{
+		display: none;
+	}
+	
+	.checkbox__input + .checkbox__label:before {
+    content: '';
+		vertical-align: top;
+		display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border-radius: $checkbox-rounded;
+    margin-right: 7px;
+    border: 1px solid #b4bbc2;
+	}
+	.checkbox__input:checked + .checkbox__label:before {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAAGlJREFUCJltziEOwlAQhOF5IWgUgiCKRPWQnACFIFh6Dw6Aa2oqewJO8CF4LyD4k002M5uZLcgf1knuSY5Bjx1SZ4XBh0fwwoIOBbdqPrEJTlWYca37iC3SYs++zNi3ynZQcMGEw88/eQN4pIxjOVJQVQAAAABJRU5ErkJggg==');
+		font-size: 12px;
+		font-weight: bold;
+    text-align: center;
+    background-color: #24aa98;
+    color: #fff;
+    border: 1px solid #24aa98;
+	}
+}
+

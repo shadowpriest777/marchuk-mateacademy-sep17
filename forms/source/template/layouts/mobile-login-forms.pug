@@ -1,0 +1,70 @@
+div(class="row")
+
+	div(class="col mobile-form")
+		div(class="mobile-form-header")
+			div(class="mobile-form-header__title") Sign up
+			a(href="#" class="mobile-form-header__title--small") Alredy Registered?
+		form(action="?" method="GET" class="mobile-form--pd")
+			div(class="form-group inner-addon left-addon")
+				input(class="form-control form-control--focus" type="email", placeholder="E-mail or login")
+				i(class="form-control--icon fa fa-envelope" aria-hidden="true")
+			div(class="form-group inner-addon left-addon")
+				input(class="form-control form-control--focus" type="password", placeholder="Password")
+				i(class="form-control--icon fa fa-lock fa-lg" aria-hidden="true")
+			div(class="forgot-pass pb-1")
+				a(href="#") Forgot password?
+			button(class="btn btn--info btn--md text-capitalize" type="submit") sign up
+			div(class="divider-wrap divider-wrap--mobile")
+				span(class="form-divider") OR
+			div(class="btn-group")
+				button(class="btn btn-social btn-social--md btn--facebook" type="submit") 
+					span(class="fa fa-facebook")
+					| Facebook
+				button(class="btn btn-social btn-social--md btn--twitter" type="submit") 
+					span(class="fa fa-twitter")
+					| Twitter
+
+	div(class="col mobile-form")
+		div(class="mobile-form-header")
+			div(class="mobile-form-header__title") Sign in
+			a(href="#" class="mobile-form-header__title--small") Create an Account
+		form(action="?" method="GET" class="mobile-form--pd")
+			div(class="form-group inner-addon left-addon")
+				input(class="form-control form-control--focus" type="email", placeholder="E-mail or login")
+				i(class="form-control--icon fa fa-envelope" aria-hidden="true")
+			div(class="form-group inner-addon left-addon")
+				input(class="form-control form-control--focus" type="password", placeholder="Password")
+				i(class="form-control--icon fa fa-lock fa-lg" aria-hidden="true")
+			div(class="remember-pass checkbox-wrap pb-1")
+				input(type="checkbox" id="checkbox-2" class="checkbox__input")
+				label(for="checkbox-2" class="checkbox__label") Remember password?
+			button(class="btn btn--success btn--md text-capitalize" type="submit") sign in
+			div(class="divider-wrap divider-wrap--mobile")
+				span(class="form-divider") OR
+			div(class="btn-group")
+				button(class="btn btn-social btn-social--md btn--facebook" type="submit") 
+					span(class="fa fa-facebook")
+					| Facebook
+				button(class="btn btn-social btn-social--md btn--twitter" type="submit") 
+					span(class="fa fa-twitter")
+					| Twitter
+				
+	div(class="col")
+		div(class="mobile-form")
+			div(class="mobile-form-header")
+				div(class="mobile-form-header__title") Reset Password
+				a(href="#" class="mobile-form-header__title--small") Sign in
+			form(action="?" method="GET" class="mobile-form--pd")
+				div(class="form-group inner-addon left-addon")
+					input(class="form-control form-control--focus" type="email", placeholder="E-mail")
+					i(class="form-control--icon fa fa-envelope" aria-hidden="true")
+				button(class="btn btn--danger btn--md text-capitalize" type="submit" value="Reset") Reset
+		div(class="mobile-form mt-2")
+			div(class="mobile-form-subscribing")
+				div(class="mobile-form-header__title") Subscribing
+				p We will never send you spam or some other trash
+			div(class="btn-group inner-addon left-addon")
+				input(class="form-control form-control--focus form-control--subscribing" type="email", placeholder="E-mail")
+				i(class="form-control--icon fa fa-envelope" aria-hidden="true")
+				button(class="btn btn--warning btn--xs" type="submit")
+					i(class="fa fa-angle-right fa-lg" aria-hidden="true")

@@ -1,0 +1,48 @@
+// Font
+
+$ff-main: 'Cabin';
+
+// Background 
+
+$bg-color-main: #f2f5f8;
+
+// Border
+
+$button-rounded:		5px;
+$checkbox-rounded:	4px;
+$input-rounded:			5px;
+$input-border:			#c6ccd2;
+
+// Buttons-color
+
+$blue: 				#3162a2;
+$light-blue: 	#65abd0;
+$aqua: 				#24aa98;
+$yellow: 			#d9c26c;
+$red: 				#db7560;
+
+$primary: 	$blue;
+$info: 			$light-blue;
+$success: 	$aqua;
+$warning: 	$yellow;
+$danger: 		$red;
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "primary":    $primary,
+	"info":       $info,
+  "success":    $success,
+  "warning":    $warning,
+  "danger":     $danger,
+	"facebook":   $primary,
+	"twitter":    $info
+), $theme-colors);
+
+// Components
+
+
+
+//** Placeholder text color
+
+$input-color-placeholder-light:   #c6ccd2;
+$input-color-placeholder-dark:    #383737;

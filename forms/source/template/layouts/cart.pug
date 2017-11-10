@@ -1,0 +1,37 @@
+div(class="container")
+	div(class="col cart")
+		form(id="form-cart" action="?" method="post")
+			span CART
+			table(class="cart-table")
+				thead
+					tr(class="cart-head")
+						td(class="image")
+						td(class="name") Item
+						td(class="price") Price
+						td(class="quantity") Quantity
+						td(class="total-price") Total
+				tbody
+					tr(class="cart-border")
+						td(class="image")
+							a(href="#")
+								img(src="../images/leather-bag.jpg" title="Leather Bag")
+						td(class="name")
+							a(href="#") Leather Bag
+						td(class="price") $199
+						td(class="quantity")
+							span(class="plus")
+							input(type="text" name="quantity" value="1" size="1")
+							span(class="minus")
+						td(class="total-price") $199
+					tr(class="cart-border")
+						td(class="image")
+							a(href="#")
+								img(src="../images/leather-bag.jpg" title="Leather Bag")
+						td(class="name")
+							a(href="#") Leather Belt
+						td(class="price") $199
+						td(class="quantity")
+							span(class="plus")
+							input(type="text" name="quantity" value="1" size="1")
+							span(class="minus")
+						td(class="total-price") $199

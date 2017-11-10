@@ -1,0 +1,53 @@
+.btn {
+	outline: none;
+  cursor: pointer;
+	border: none;
+	border-radius: $button-rounded;
+	color: #fff;
+	transition: 0.3s;
+	
+	&-group{
+	display: flex;
+	justify-content: space-between;
+	}
+	
+	&-social{
+		&--lg{
+			@include button-size(15px, 47%);
+		}
+		&--md{
+			@include button-size(8px, 45%);
+		}
+		.fa{
+			padding-right: 10px;
+		}
+	}
+
+	&--lg {
+		padding: 17px;
+		width: 100%;
+	}
+	
+	&--md {
+		padding: 15px;
+		font-size: 18px;
+		width: 100%
+	}
+			
+	&--sm {
+		padding: 11px;
+		font-size: 14px;
+		width: 100%
+	}
+	
+	&--xs {
+		padding: 15px 20px;
+	}
+	
+}
+
+@each $color, $value in $theme-colors {
+  .btn--#{$color} {
+    @include button-variant($value);
+  }
+}

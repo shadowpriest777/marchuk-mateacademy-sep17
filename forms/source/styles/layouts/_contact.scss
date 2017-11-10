@@ -1,0 +1,55 @@
+.mr-top{
+	margin-top: 50px;
+}
+.contact{
+	background-color: $bg-color-main;
+	padding: 20px;
+	color: #b4bbc2;
+	
+	&-desktop{
+		max-width: 620px;
+	}
+	
+	&-mobile{
+		max-width: 300px;
+	}
+	
+	&-title{
+		padding-bottom: 15px;
+		@extend .mobile-form-header__title;
+	}
+
+	label{
+		display: inline-block;
+		margin-bottom: 8px;
+	}
+	
+	&-footer{
+		margin: 4px 10px 10px;
+				
+		
+		&-btn{
+			padding: 15px;
+			width: 25%;
+			
+			&--mobile{
+				padding: 15px;
+				width: 55%;
+				float: right;
+			}
+		}
+	}
+	
+	&-group{
+		margin-bottom: 20px;
+		width: 100%;
+	}
+}
+
+select[name="contact-select"]{
+	 -webkit-appearance: button;
+   background-image: url(../../images/icons/open-icon.png);
+   background-position: 95% center;
+   background-repeat: no-repeat;
+	padding: 14px;
+}

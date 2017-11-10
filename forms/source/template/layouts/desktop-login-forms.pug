@@ -1,0 +1,46 @@
+div(class="row")
+
+	div(class="col desktop-form")
+		div(class="desktop-form-header desktop-form-header--bg-1")
+			a(href="#" class="desktop-form-header__title--small") Alredy Registered?
+			div(class="desktop-form-header__title") Sign up
+		form(action="?" method="GET" class="desktop-login-form")
+			div(class="form-group inner-addon left-addon")
+				input(class="form-control form-control--light" type="email", placeholder="E-mail or login")
+				i(class="form-control--icon fa fa-envelope" aria-hidden="true")
+			div(class="form-group inner-addon left-addon")
+				input(class="form-control form-control--light" type="password", placeholder="Password")
+				i(class="form-control--icon fa fa-lock fa-lg" aria-hidden="true")
+			div(class="forgot-pass")
+				a(href="#") Forgot password?
+			button(class="btn btn--info btn--md text-capitalize" type="submit") sign up
+			div(class="divider-wrap")
+				span(class="form-divider") OR
+			div(class="btn-group")
+				button(class="btn btn-social--lg btn--facebook" type="submit") 
+					| Login via Facebook
+				button(class="btn btn-social--lg btn--twitter" type="submit") 
+					| Login via Twitter
+				
+	div(class="col desktop-form")
+		div(class="desktop-form-header desktop-form-header--bg-2")
+			a(href="#" class="desktop-form-header__title--small") Create an Account
+			div(class="desktop-form-header__title") Sign in
+		form(action="?" method="GET" class="desktop-login-form")
+			div(class="form-group inner-addon left-addon")
+				input(class="form-control form-control--light" type="email", placeholder="E-mail or login")
+				i(class="form-control--icon fa fa-envelope" aria-hidden="true")
+			div(class="form-group inner-addon left-addon")
+				input(class="form-control form-control--light" type="password", placeholder="Password")
+				i(class="form-control--icon fa fa-lock fa-lg" aria-hidden="true")
+			div(class="remember-pass checkbox-wrap")
+				input(type="checkbox" id="checkbox-1" class="checkbox__input")
+				label(for="checkbox-1" class="checkbox__label") Remember password?
+			button(class="btn btn--success btn--md text-capitalize" type="submit") sign in
+			div(class="divider-wrap")
+				span(class="form-divider") OR
+			div(class="btn-group")
+				button(class="btn btn-social--lg btn--facebook" type="submit") 
+					| Login via Facebook
+				button(class="btn btn-social--lg btn--twitter" type="submit") 
+					| Login via Twitter

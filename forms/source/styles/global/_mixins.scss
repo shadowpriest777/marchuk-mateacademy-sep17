@@ -1,0 +1,12 @@
+@mixin button-variant($background) {
+  background-color: $background;
+
+  &:hover {
+    background-color: lighten($background, 10%);
+  }
+}
+
+@mixin button-size($padding, $width) {
+  padding: $padding;
+	min-width: $width;
+}

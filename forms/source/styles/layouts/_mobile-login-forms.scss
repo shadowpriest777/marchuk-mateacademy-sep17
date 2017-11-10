@@ -1,0 +1,42 @@
+.mobile-form{
+	text-align: center;
+	color: #b4bbc2;
+	padding: 20px;
+	background-color: $bg-color-main;
+	max-width: 300px;
+	
+	&-header{
+		display: flex;
+		justify-content: space-between;
+		
+		&__title{
+			text-transform: uppercase;
+			color: #383737;
+			&--small{
+				font-size: 14px;
+				color: #65abd0;
+			}
+		}
+	}
+	&--pd{
+		padding: 20px 10px 16px;
+	}
+	&-subscribing{
+		text-align: left;
+		p{
+			line-height: 1.1;
+		}
+	}
+	&__group{
+		position: relative;
+		display: flex;
+	}
+}
+
+.btn--icon {
+	position: absolute;
+	color: #c6ccd2;
+	left: 17px;
+	top: 16px;
+	z-index: 1;
+}
