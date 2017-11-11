@@ -13,18 +13,87 @@
 		color: #b4bbc2;
 		border-bottom: 1px solid #dee2e7;
 		line-height: 36px;
+		font-size: 14px;
 	}
 	
 	&-border{
 		border-bottom: 2px solid #dee2e7;
 	}
+	
+	&-total-sum{
+		line-height: 42px;
+		
+		&-title{
+			padding: 15px;
+			color: #b4bbc2;
+		}
+	}
+	
+	&-order{
+		text-align: left;
+	}
+}
+.back-to-shopping-link{
+	margin-left: 10px;
+	
+}
+.cart-submit{
+	width: 40%;
+	padding: 15px;
+	margin-right: -10px;
+  background-image: url(../images/icons/order-icon.png);
+  background-position: 74% center;
+  background-repeat: no-repeat;
 
+}
+.product-colors{
+	padding: 0;
+	margin: 0;
+	color: #b4bbc2;
+	display: inline-block;
+	font-size: 14px;
+	
+	&-variants{
+		display: inline-block;
+    margin: 4px 0px 5px 6px;
+    vertical-align: middle;
+
+		&-link{
+			padding: 0px;
+			
+			&-icon{
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				line-height: 13px;
+				text-align: center;
+				vertical-align: middle;
+				border-radius: 50%;
+				}
+			}
+		}
+	}
+.product-size{
+	color: #b4bbc2;
+	margin-left: 30px;
+	font-size: 14px;
+	
+	&-link{
+		font-size: 12px;
+		padding: 1px 5px;
+		margin-left: 8px;
+	}
+}
+.active span:before {
+	content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAAGlJREFUCJltziEOwlAQhOF5IWgUgiCKRPWQnACFIFh6Dw6Aa2oqewJO8CF4LyD4k002M5uZLcgf1knuSY5Bjx1SZ4XBh0fwwoIOBbdqPrEJTlWYca37iC3SYs++zNi3ynZQcMGEw88/eQN4pIxjOVJQVQAAAABJRU5ErkJggg==');
+  color: #fff;
 }
 .cart th, .cart td {
     padding: 8px;
 }
-.cart a{
+.product-name{
 	color: #383737;
+	display: block;
 }
 .image{
 	text-align: right;

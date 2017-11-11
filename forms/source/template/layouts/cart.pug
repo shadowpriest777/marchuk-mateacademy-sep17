@@ -1,37 +1,87 @@
-div(class="container")
-	div(class="col cart")
-		form(id="form-cart" action="?" method="post")
-			span CART
-			table(class="cart-table")
-				thead
-					tr(class="cart-head")
-						td(class="image")
-						td(class="name") Item
-						td(class="price") Price
-						td(class="quantity") Quantity
-						td(class="total-price") Total
-				tbody
-					tr(class="cart-border")
-						td(class="image")
-							a(href="#")
-								img(src="images/leather-bag.jpg" title="Leather Bag")
-						td(class="name")
-							a(href="#") Leather Bag
-						td(class="price") $199
-						td(class="quantity")
-							span(class="plus")
-							input(type="text" name="quantity" value="1" size="1")
-							span(class="minus")
-						td(class="total-price") $199
-					tr(class="cart-border")
-						td(class="image")
-							a(href="#")
-								img(src="images/leather-bag.jpg" title="Leather Bag")
-						td(class="name")
-							a(href="#") Leather Belt
-						td(class="price") $199
-						td(class="quantity")
-							span(class="plus")
-							input(type="text" name="quantity" value="1" size="1")
-							span(class="minus")
-						td(class="total-price") $199
+div(class="container mr-top")
+	div(class="row")
+		div(class="col cart")
+			form(id="form-cart" action="?" method="post")
+				span CART
+				table(class="cart-table")
+					thead
+						tr(class="cart-head")
+							td(class="image")
+							td(class="name") Item
+							td(class="price") Price
+							td(class="quantity") Quantity
+							td(class="total-price") Total
+					tbody
+						tr(class="cart-border")
+							td(class="image")
+								a(href="#")
+									img(src="images/leather-bag.jpg" alt="Leather Bag")
+							td(class="name")
+								a(href="#" class="product-name") Leather Bag
+							td(class="price") $199
+							td(class="quantity")
+								span(class="plus")
+								input(type="text" name="quantity" value="1" size="1")
+								span(class="minus")
+							td(class="total-price") $199
+						tr(class="cart-border")
+							td(class="image")
+								a(href="#")
+									img(src="images/leather-belt.jpg" alt="Leather Belt")
+							td(class="name")
+								a(href="#" class="product-name") Leather Belt
+								ul(class="product-colors") Color:
+									li(class="product-colors-variants active")
+										a(href="#" class="product-colors-variants-link") 
+											span(class="product-colors-variants-link-icon product-colors-icon--warning")
+									li(class="product-colors-variants")
+										a(href="#" class="product-colors-variants-link") 
+											span(class="product-colors-variants-link-icon product-colors-icon--info")
+									li(class="product-colors-variants")
+										a(href="#" class="product-colors-variants-link") 
+											span(class="product-colors-variants-link-icon product-colors-icon--success")
+									li(class="product-colors-variants")
+										a(href="#" class="product-colors-variants-link") 
+											span(class="product-colors-variants-link-icon product-colors-icon--danger")
+									li(class="product-colors-variants")
+										a(href="#" class="product-colors-variants-link") 
+											span(class="product-colors-variants-link-icon product-colors-icon--dark-gray")
+							td(class="price") $49
+							td(class="quantity")
+								span(class="plus")
+								input(type="text" name="quantity" value="1" size="1")
+								span(class="minus")
+							td(class="total-price") $98
+						tr(class="cart-border")
+							td(class="image")
+								a(href="#")
+									img(src="images/leather-shoes.jpg" alt="Leather shoes")
+							td(class="name")
+								a(href="#" class="product-name") Leather Shoes
+								ul(class="product-colors") Color:
+									li(class="product-colors-variants active")
+										a(href="#" class="product-colors-variants-link") 
+											span(class="product-colors-variants-link-icon product-colors-icon--brown")
+									li(class="product-colors-variants")
+										a(href="#" class="product-colors-variants-link") 
+											span(class="product-colors-variants-link-icon product-colors-icon--dark-gray")
+								span(class="product-size") Size:
+								a(href="#" class="btn btn--light-gray product-size-link") 42
+							td(class="price") $199
+							td(class="quantity")
+								span(class="plus")
+								input(type="text" name="quantity" value="1" size="1")
+								span(class="minus")
+							td(class="total-price") $199
+						tr
+							td(colspan="5" class="cart-total-sum")
+								span(class="cart-total-sum-title") Subtotal:
+								span(class="cart-total-sum-usd") $496
+						tr
+							td(class="cart-order" colspan="2")
+								a(href="#" class="back-to-shopping-link") 
+									i(class="fa fa-angle-left" aria-hidden="true")
+									| Continue Shopping
+							td(colspan="3")
+								button(class="btn btn--success cart-submit") Order
+								

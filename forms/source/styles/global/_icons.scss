@@ -1,0 +1,5 @@
+@each $color, $value in $theme-colors {
+  .product-colors-icon--#{$color} {
+    @include color-variant($value);
+  }
+}

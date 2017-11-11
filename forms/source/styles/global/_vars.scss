@@ -16,26 +16,32 @@ $input-border:			#c6ccd2;
 // Buttons-color
 
 $blue: 				#3162a2;
-$light-blue: 	#65abd0;
+$light-blue:	#65abd0;
 $aqua: 				#24aa98;
 $yellow: 			#d9c26c;
 $red: 				#db7560;
+$dark-gray:		#383737;
+$light-gray:	#c6ccd2;
+$brown:				#865447;
 
-$primary: 	$blue;
-$info: 			$light-blue;
-$success: 	$aqua;
-$warning: 	$yellow;
-$danger: 		$red;
+$primary:		$blue;
+$info:			$light-blue;
+$success:		$aqua;
+$warning:		$yellow;
+$danger:		$red;
 
 $theme-colors: ();
 $theme-colors: map-merge((
-  "primary":    $primary,
+	"primary":    $primary,
 	"info":       $info,
-  "success":    $success,
-  "warning":    $warning,
-  "danger":     $danger,
+	"success":    $success,
+	"warning":    $warning,
+	"danger":     $danger,
 	"facebook":   $primary,
-	"twitter":    $info
+	"twitter":    $info,
+	"dark-gray":	$dark-gray,
+	"brown":			$brown,
+	"light-gray":	$light-gray
 ), $theme-colors);
 
 // Components
