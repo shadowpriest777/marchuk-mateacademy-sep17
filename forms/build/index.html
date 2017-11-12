@@ -127,147 +127,257 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row mr-top">
-          <div class="col contact contact-desktop">
-            <div class="contact-title">Contact</div>
-            <form action="?" method="GET">
-              <div class="row">
-                <div class="col mr-2">
-                  <label for="contact-name">Name</label>
-                  <input class="form-control form-control--dark" id="contact-name" type="text">
-                </div>
-                <div class="col">
-                  <label for="contact-email">E-mail</label>
-                  <input class="form-control form-control--dark" id="contact-email" type="email">
-                </div>
+      <div class="row mr-top">
+        <div class="col contact contact-desktop">
+          <div class="contact-title">Contact</div>
+          <form action="?" method="GET">
+            <div class="row">
+              <div class="col mr-2">
+                <label class="form-label" for="contact-name">Name</label>
+                <input class="form-control form-control--dark" id="contact-name" type="text">
               </div>
-              <div class="row">
-                <div class="col mr-2">
-                  <label for="contact-subject">Subject</label>
-                  <input class="form-control form-control--dark" id="contact-subject" type="text">
-                </div>
-                <div class="col">
-                  <label for="contact-select">Select Budget</label>
-                  <select class="btn btn--md btn--info" name="contact-select" id="contact-select">
-                    <option>$10.000 – $15.000</option>
-                    <option>$15.000 – $20.000</option>
-                  </select>
-                </div>
+              <div class="col">
+                <label class="form-label" for="contact-email">E-mail</label>
+                <input class="form-control form-control--dark" id="contact-email" type="email">
               </div>
-              <div class="row">
-                <div class="col contact-group">
-                  <label for="contact-message">Message</label>
-                  <textarea class="form-control form-control--dark" rows="6" id="contact-message"></textarea>
-                </div>
+            </div>
+            <div class="row">
+              <div class="col mr-2">
+                <label class="form-label" for="contact-subject">Subject</label>
+                <input class="form-control form-control--dark" id="contact-subject" type="text">
               </div>
-              <div class="btn-group contact-footer">
-                <div class="checkbox-wrap">
-                  <input class="checkbox__input" type="checkbox" id="checkbox-3">
-                  <label class="checkbox__label" for="checkbox-3">Send me a copy</label>
-                </div>
-                <button class="btn btn--success contact-footer-btn" type="submit">Send</button>
+              <div class="col">
+                <label class="form-label" for="contact-select">Select Budget</label>
+                <select class="btn btn--md btn--info form-select" id="contact-select">
+                  <option>$10.000 – $15.000</option>
+                  <option>$15.000 – $20.000</option>
+                </select>
               </div>
-            </form>
-          </div>
-          <div class="col contact contact-mobile">
-            <div class="contact-title">Contact</div>
-            <form action="?" method="GET">
-              <div class="row mt-1">
-                <div class="contact-group">
-                  <label for="contact-name">Name</label>
-                  <input class="form-control form-control--dark" id="contact-name" type="text">
-                </div>
+            </div>
+            <div class="row">
+              <div class="col contact-group">
+                <label class="form-label" for="contact-message">Message</label>
+                <textarea class="form-control form-control--dark" rows="6" id="contact-message"></textarea>
               </div>
-              <div class="row">
-                <div class="contact-group">
-                  <label for="contact-subject">E-mail</label>
-                  <input class="form-control form-control--dark" id="contact-subject" type="text">
-                </div>
+            </div>
+            <div class="btn-group contact-footer">
+              <div class="checkbox-wrap">
+                <input class="checkbox__input" type="checkbox" id="checkbox-3">
+                <label class="checkbox__label" for="checkbox-3">Send me a copy</label>
               </div>
-              <div class="row">
-                <div class="form-group w-100">
-                  <label for="contact-message">Message</label>
-                  <textarea class="form-control form-control--dark" rows="6" id="contact-message"></textarea>
-                </div>
+              <button class="btn btn--success contact-footer-btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="col contact contact-mobile">
+          <div class="contact-title">Contact</div>
+          <form action="?" method="GET">
+            <div class="row mt-1">
+              <div class="contact-group">
+                <label class="form-label" for="contact-name">Name</label>
+                <input class="form-control form-control--dark" id="contact-name" type="text">
               </div>
-              <button class="btn btn--success contact-footer-btn--mobile" type="submit">Send</button>
-            </form>
-          </div>
+            </div>
+            <div class="row">
+              <div class="contact-group">
+                <label class="form-label" for="contact-subject">E-mail</label>
+                <input class="form-control form-control--dark" id="contact-subject" type="text">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group w-100">
+                <label class="form-label" for="contact-message">Message</label>
+                <textarea class="form-control form-control--dark" rows="6" id="contact-message"></textarea>
+              </div>
+            </div>
+            <button class="btn btn--success contact-footer-btn--mobile" type="submit">Send</button>
+          </form>
         </div>
       </div>
-      <div class="container mr-top">
+      <div class="row mr-top">
+        <div class="col cart">
+          <form id="form-cart" action="?" method="post"><span>CART</span>
+            <table class="cart-table">
+              <thead>
+                <tr class="cart-head">
+                  <td class="image"></td>
+                  <td class="name">Item</td>
+                  <td class="price">Price</td>
+                  <td class="quantity">Quantity</td>
+                  <td class="total-price">Total</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="cart-border">
+                  <td class="image"><a href="#"><img src="images/leather-bag.jpg" alt="Leather Bag"></a></td>
+                  <td class="name">
+                    <div><a class="product-name" href="#">Leather Bag</a></div>
+                  </td>
+                  <td class="price">$199</td>
+                  <td class="quantity"><span class="plus"></span>
+                    <input type="text" name="quantity" value="1" size="1"><span class="minus"></span>
+                  </td>
+                  <td class="total-price">$199</td>
+                </tr>
+                <tr class="cart-border">
+                  <td class="image"><a href="#"><img src="images/leather-belt.jpg" alt="Leather Belt"></a></td>
+                  <td class="name">
+                    <div><a class="product-name" href="#">Leather Belt</a></div>
+                    <ul class="product-colors">Color:
+                      <li class="product-colors-variants active"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--warning"></span></a></li>
+                      <li class="product-colors-variants"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--info"></span></a></li>
+                      <li class="product-colors-variants"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--success"></span></a></li>
+                      <li class="product-colors-variants"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--danger"></span></a></li>
+                      <li class="product-colors-variants"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--dark-gray"></span></a></li>
+                    </ul>
+                  </td>
+                  <td class="price">$49</td>
+                  <td class="quantity"><span class="plus"></span>
+                    <input type="text" name="quantity" value="1" size="1"><span class="minus"></span>
+                  </td>
+                  <td class="total-price">$98</td>
+                </tr>
+                <tr class="cart-border">
+                  <td class="image"><a href="#"><img src="images/leather-shoes.jpg" alt="Leather shoes"></a></td>
+                  <td class="name">
+                    <div><a class="product-name" href="#">Leather Shoes</a></div>
+                    <ul class="product-colors">Color:
+                      <li class="product-colors-variants active"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--brown"></span></a></li>
+                      <li class="product-colors-variants"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--dark-gray"></span></a></li>
+                    </ul><span class="product-size">Size:</span><a class="btn btn--light-gray product-size-link" href="#">42</a>
+                  </td>
+                  <td class="price">$199</td>
+                  <td class="quantity"><span class="plus"></span>
+                    <input type="text" name="quantity" value="1" size="1"><span class="minus"></span>
+                  </td>
+                  <td class="total-price">$199</td>
+                </tr>
+                <tr>
+                  <td class="cart-total-sum" colspan="5"><span class="cart-total-sum-title">Subtotal:</span><span class="cart-total-sum-usd">$496</span></td>
+                </tr>
+                <tr>
+                  <td class="cart-order" colspan="2"><a class="back-to-shopping-link" href="#"> <i class="back-to-shopping-link--icon fa fa-angle-left" aria-hidden="true"></i>Continue Shopping</a></td>
+                  <td colspan="3">
+                    <button class="btn btn--success cart-submit">Order</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col shipping-address">
+          <div class="shipping-address-title">Shipping Address</div>
+          <form action="?" method="GET">
+            <div class="row">
+              <div class="col mr-2">
+                <label class="form-label" for="country-select">Select Country</label>
+                <select class="btn btn--md btn--warning form-select" id="country-select">
+                  <option>USA</option>
+                  <option>Canada</option>
+                </select>
+              </div>
+              <div class="col mr-2">
+                <label class="form-label" for="region">State, Region, Province</label>
+                <input class="form-control form-control--dark" id="region" type="text">
+              </div>
+              <div class="col">
+                <label class="form-label" for="first-address">Address 1</label>
+                <input class="form-control form-control--dark" id="first-address" type="email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mr-2">
+                <label class="form-label" for="city-select">Select City</label>
+                <select class="btn btn--md btn--warning form-select" id="city-select">
+                  <option>California</option>
+                  <option>Denver</option>
+                </select>
+              </div>
+              <div class="col mr-2">
+                <label class="form-label" for="zip-code">ZIP Code</label>
+                <input class="form-control form-control--dark" id="zip-code" type="text">
+              </div>
+              <div class="col">
+                <label class="form-label" for="second-address">Address 2</label>
+                <input class="form-control form-control--dark" id="second-address" type="email">
+              </div>
+            </div>
+            <div class="shipping-address-title contact-info">Contact info</div>
+            <div class="row">
+              <div class="col mr-2">
+                <label class="form-label" for="full-name">Full Name</label>
+                <input class="form-control form-control--dark" id="full-name" type="text">
+              </div>
+              <div class="col mr-2">
+                <label class="form-label" for="E-mail">E-mail</label>
+                <input class="form-control form-control--dark" id="E-mail" type="email">
+              </div>
+              <div class="col">
+                <label class="form-label" for="phone">Phone</label>
+                <input class="form-control form-control--dark" id="phone" type="email">
+              </div>
+            </div>
+            <div class="row form-footer"><a class="previous-form" href="#"> <i class="previous-form--icon fa fa-angle-left" aria-hidden="true"></i>Return to Cart</a>
+              <button class="btn btn--success payment-method-submit">Payment method</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container payment-method">
         <div class="row">
-          <div class="col cart">
-            <form id="form-cart" action="?" method="post"><span>CART</span>
-              <table class="cart-table">
-                <thead>
-                  <tr class="cart-head">
-                    <td class="image"></td>
-                    <td class="name">Item</td>
-                    <td class="price">Price</td>
-                    <td class="quantity">Quantity</td>
-                    <td class="total-price">Total</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="cart-border">
-                    <td class="image"><a href="#"><img src="images/leather-bag.jpg" alt="Leather Bag"></a></td>
-                    <td class="name">
-                      <div><a class="product-name" href="#">Leather Bag</a></div>
-                    </td>
-                    <td class="price">$199</td>
-                    <td class="quantity"><span class="plus"></span>
-                      <input type="text" name="quantity" value="1" size="1"><span class="minus"></span>
-                    </td>
-                    <td class="total-price">$199</td>
-                  </tr>
-                  <tr class="cart-border">
-                    <td class="image"><a href="#"><img src="images/leather-belt.jpg" alt="Leather Belt"></a></td>
-                    <td class="name">
-                      <div><a class="product-name" href="#">Leather Belt</a></div>
-                      <ul class="product-colors">Color:
-                        <li class="product-colors-variants active"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--warning"></span></a></li>
-                        <li class="product-colors-variants"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--info"></span></a></li>
-                        <li class="product-colors-variants"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--success"></span></a></li>
-                        <li class="product-colors-variants"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--danger"></span></a></li>
-                        <li class="product-colors-variants"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--dark-gray"></span></a></li>
-                      </ul>
-                    </td>
-                    <td class="price">$49</td>
-                    <td class="quantity"><span class="plus"></span>
-                      <input type="text" name="quantity" value="1" size="1"><span class="minus"></span>
-                    </td>
-                    <td class="total-price">$98</td>
-                  </tr>
-                  <tr class="cart-border">
-                    <td class="image"><a href="#"><img src="images/leather-shoes.jpg" alt="Leather shoes"></a></td>
-                    <td class="name">
-                      <div><a class="product-name" href="#">Leather Shoes</a></div>
-                      <ul class="product-colors">Color:
-                        <li class="product-colors-variants active"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--brown"></span></a></li>
-                        <li class="product-colors-variants"><a class="product-colors-variants-link" href="#"> <span class="product-colors-variants-link-icon product-colors-icon--dark-gray"></span></a></li>
-                      </ul><span class="product-size">Size:</span><a class="btn btn--light-gray product-size-link" href="#">42</a>
-                    </td>
-                    <td class="price">$199</td>
-                    <td class="quantity"><span class="plus"></span>
-                      <input type="text" name="quantity" value="1" size="1"><span class="minus"></span>
-                    </td>
-                    <td class="total-price">$199</td>
-                  </tr>
-                  <tr>
-                    <td class="cart-total-sum" colspan="5"><span class="cart-total-sum-title">Subtotal:</span><span class="cart-total-sum-usd">$496</span></td>
-                  </tr>
-                  <tr>
-                    <td class="cart-order" colspan="2"><a class="back-to-shopping-link" href="#"> <i class="back-to-shopping-link--icon fa fa-angle-left" aria-hidden="true"></i>Continue Shopping</a></td>
-                    <td colspan="3">
-                      <button class="btn btn--success cart-submit">Order</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="col">
+            <div class="payment-method-title">Payment Method</div>
+            <form action="?" method="GET">
+              <div class="row">
+                <div class="col credit-card">
+                  <label class="payment-method-label" for="region">Credit Card</label>
+                  <div class="credit-card-group">
+                    <input class="form-control form-control--dark payment-method-form" id="region" type="text">
+                    <input class="form-control form-control--dark payment-method-form" id="region" type="text">
+                    <input class="form-control form-control--dark payment-method-form" id="region" type="text">
+                    <input class="form-control form-control--dark payment-method-form" id="region" type="text">
+                  </div>
+                  <label class="form-label mt-2" for="region">Credit Card</label>
+                  <input class="form-control form-control--dark" id="region" type="text">
+                  <label class="payment-method-label mt-2" for="expire-card">Expire</label>
+                  <div class="credit-card-group">
+                    <select class="btn btn--warning payment-method-select" id="expire-card">
+                      <option>Month</option>
+                      <option>October</option>
+                      <option>November</option>
+                    </select>
+                    <select class="btn btn--warning payment-method-select" id="city-select">
+                      <option>Year</option>
+                      <option>2018</option>
+                      <option>2019</option>
+                    </select>
+                  </div>
+                  <label class="payment-method-label mt-2" for="region">CVV</label>
+                  <input class="form-control form-control--dark payment-method-form" id="region" type="text">
+                </div>
+              </div>
             </form>
           </div>
+          <div class="col">
+            <div class="payment-method-title">Billing Address</div>
+            <form action="?" method="GET">
+              <div class="row">
+                <div class="col mr-2">
+                  <div class="checkbox-wrap">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-4">
+                    <label class="checkbox__label" for="checkbox-4">Same as shipping address</label>
+                  </div>
+                  <p>A hundred thousand grateful loves to your dear papa and mamma. Is your poor brother recovered of his rack-punch? Oh, dear! Oh, dear! How men should beware of wicked punch!</p>
+                </div>
+              </div>
+            </form>
+            <div class="total-sum-usd">$496</div>
+          </div>
+        </div>
+        <div class="row form-footer"><a class="previous-form" href="#"> <i class="previous-form--icon fa fa-angle-left" aria-hidden="true"></i>Edit Shipping Address</a>
+          <button class="btn btn--success payment-method-submit">Place Order</button>
         </div>
       </div>
     </div>

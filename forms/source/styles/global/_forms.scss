@@ -47,10 +47,42 @@
 .left-addon input {
   padding-left: 45px;
 }
-.form-group{
-	margin-bottom: 1.5rem;
+.form {
+	
+	&-group {
+		margin-bottom: 1.5rem;
+	}
+	
+	&-label{
+		display: inline-block;
+		padding-bottom: calc(1rem/2);
+	}
+	
+	&-select {
+		-webkit-appearance: button;
+    background-image: url(../images/icons/open-icon.png);
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    padding: 14px;
+	}
+	
+	&-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 0 15px
+	}
 }
-
+.previous-form{
+	display: block;
+	margin-left: 10px;
+  color: #65abd0;
+	
+	&--icon{
+		margin-right: 10px;
+	}
+}
 .checkbox-wrap{
 	text-align: left;
 	

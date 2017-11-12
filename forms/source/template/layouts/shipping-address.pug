@@ -1,0 +1,44 @@
+div(class="row")
+	div(class="col shipping-address")
+		div(class="shipping-address-title") Shipping Address
+		form(action="?", method="GET")
+			div(class="row")
+				div(class="col mr-2")
+					label(for="country-select" class="form-label") Select Country
+					select(id="country-select" class="btn btn--md btn--warning form-select")
+						option USA
+						option Canada
+				div(class="col mr-2")
+					label(for="region" class="form-label") State, Region, Province
+					input(id="region" class="form-control form-control--dark" type="text")
+				div(class="col")
+					label(for="first-address" class="form-label") Address 1
+					input(id="first-address" class="form-control form-control--dark" type="email")
+			div(class="row")
+				div(class="col mr-2")
+					label(for="city-select" class="form-label") Select City
+					select(id="city-select" class="btn btn--md btn--warning form-select")
+						option California
+						option Denver
+				div(class="col mr-2")
+					label(for="zip-code" class="form-label") ZIP Code
+					input(id="zip-code" class="form-control form-control--dark" type="text")
+				div(class="col")
+					label(for="second-address" class="form-label") Address 2
+					input(id="second-address" class="form-control form-control--dark" type="email")
+			div(class="shipping-address-title contact-info") Contact info
+			div(class="row")
+				div(class="col mr-2")
+					label(for="full-name" class="form-label") Full Name
+					input(id="full-name" class="form-control form-control--dark" type="text")
+				div(class="col mr-2")
+					label(for="E-mail" class="form-label") E-mail
+					input(id="E-mail" class="form-control form-control--dark" type="email")
+				div(class="col")
+					label(for="phone" class="form-label") Phone
+					input(id="phone" class="form-control form-control--dark" type="email")
+			div(class="row form-footer")
+				a(href="#" class="previous-form") 
+					i(class="previous-form--icon fa fa-angle-left" aria-hidden="true")
+					| Return to Cart
+				button(class="btn btn--success payment-method-submit") Payment method

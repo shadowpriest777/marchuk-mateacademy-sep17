@@ -1,0 +1,43 @@
+div(class="container payment-method")
+	div(class="row")
+		div(class="col")
+			div(class="payment-method-title") Payment Method
+			form(action="?", method="GET")
+				div(class="row")
+					div(class="col credit-card")
+						label(for="region" class="payment-method-label") Credit Card
+						div(class="credit-card-group")
+							input(id="region" class="form-control form-control--dark payment-method-form" type="text")
+							input(id="region" class="form-control form-control--dark payment-method-form" type="text")
+							input(id="region" class="form-control form-control--dark payment-method-form" type="text")
+							input(id="region" class="form-control form-control--dark payment-method-form" type="text")
+						label(for="region" class="form-label mt-2") Credit Card
+						input(id="region" class="form-control form-control--dark" type="text")
+						label(for="expire-card" class="payment-method-label mt-2") Expire
+						div(class="credit-card-group")
+							select(id="expire-card" class="btn btn--warning payment-method-select")
+								option Month
+								option October
+								option November
+							select(id="city-select" class="btn btn--warning payment-method-select")
+								option Year
+								option 2018
+								option 2019
+						label(for="region" class="payment-method-label mt-2") CVV
+						input(id="region" class="form-control form-control--dark payment-method-form" type="text")
+		div(class="col")
+			div(class="payment-method-title") Billing Address
+			form(action="?", method="GET")
+				div(class="row")
+					div(class="col mr-2")
+						div(class="checkbox-wrap")
+							input(type="checkbox" id="checkbox-4" class="checkbox__input")
+							label(for="checkbox-4" class="checkbox__label") Same as shipping address
+						p
+							| A hundred thousand grateful loves to your dear papa and mamma. Is your poor brother recovered of his rack-punch? Oh, dear! Oh, dear! How men should beware of wicked punch!
+			div(class="total-sum-usd") $496
+	div(class="row form-footer")
+		a(href="#" class="previous-form") 
+			i(class="previous-form--icon fa fa-angle-left" aria-hidden="true")
+			| Edit Shipping Address
+		button(class="btn btn--success payment-method-submit") Place Order

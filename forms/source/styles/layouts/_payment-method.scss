@@ -1,0 +1,34 @@
+.payment-method{
+	@extend .contact;
+	margin: 10px;
+	
+	&-title{
+		@extend .contact-title;
+	}
+	
+	&-label{
+		display: block;
+		padding-bottom: calc(1rem/2);
+	}
+	
+	&-form{
+		display: inline-block;
+		width: 21%;
+	}
+	
+	&-select{
+		@extend .form-select;
+		width: 46%;
+	}
+}
+.credit-card{
+	max-width: 325px;
+	
+	&-group{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.total-sum-usd{
+
+}

@@ -1,0 +1,28 @@
+.shipping-address{
+	@extend .contact;
+	
+	&-title{
+		@extend .contact-title;
+	}
+}
+.contact-info{
+	margin-top: 50px;
+}
+.back-to-cart{
+	display: block;
+	@extend .back-to-shopping-link;
+}
+.payment-method-submit{
+	min-width: 21%;
+	padding: 15px;
+	background-image: url(../images/icons/order-icon.png);
+	background-position: 92% center;
+	background-repeat: no-repeat;
+}
+.contact-info-total{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+	padding: 0 15px;
+}

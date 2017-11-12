@@ -15,11 +15,6 @@
 		padding-bottom: 15px;
 		@extend .mobile-form-header__title;
 	}
-
-	label{
-		display: inline-block;
-		margin-bottom: 8px;
-	}
 	
 	&-footer{
 		margin: 4px 10px 10px;
@@ -41,12 +36,4 @@
 		margin-bottom: 20px;
 		width: 100%;
 	}
-}
-
-select[name="contact-select"]{
-	 -webkit-appearance: button;
-   background-image: url(../images/icons/open-icon.png);
-   background-position: 95% center;
-   background-repeat: no-repeat;
-	padding: 14px;
 }

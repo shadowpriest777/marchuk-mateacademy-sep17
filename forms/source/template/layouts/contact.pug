@@ -1,47 +1,46 @@
-div(class="container")
-	div(class="row mr-top")
-		div(class="col contact contact-desktop")
-			div(class="contact-title") Contact
-			form(action="?", method="GET")
-				div(class="row")
-					div(class="col mr-2")
-						label(for="contact-name") Name
-						input(id="contact-name" class="form-control form-control--dark" type="text")
-					div(class="col")
-						label(for="contact-email") E-mail
-						input(id="contact-email" class="form-control form-control--dark" type="email")
-				div(class="row")
-					div(class="col mr-2")
-						label(for="contact-subject") Subject
-						input(id="contact-subject" class="form-control form-control--dark" type="text")
-					div(class="col")
-						label(for="contact-select") Select Budget
-						select(name="contact-select" id="contact-select" class="btn btn--md btn--info")
-							option $10.000 – $15.000
-							option $15.000 – $20.000
-				div(class="row")
-					div(class="col contact-group")
-						label(for="contact-message") Message
-						textarea(rows="6" id="contact-message" class="form-control form-control--dark")
-				div(class="btn-group contact-footer")
-					div(class="checkbox-wrap")
-						input(type="checkbox" id="checkbox-3" class="checkbox__input")
-						label(for="checkbox-3" class="checkbox__label") Send me a copy
-					button(class="btn btn--success contact-footer-btn" type="submit") Send
-					
-		div(class="col contact contact-mobile")
-			div(class="contact-title") Contact
-			form(action="?", method="GET")
-				div(class="row mt-1")
-					div(class="contact-group")
-						label(for="contact-name") Name
-						input(id="contact-name" class="form-control form-control--dark" type="text")
-				div(class="row")
-					div(class="contact-group")
-						label(for="contact-subject") E-mail
-						input(id="contact-subject" class="form-control form-control--dark" type="text")
-				div(class="row")
-					div(class="form-group w-100")
-						label(for="contact-message") Message
-						textarea(rows="6" id="contact-message" class="form-control form-control--dark")
-				button(class="btn btn--success contact-footer-btn--mobile" type="submit") Send
+div(class="row mr-top")
+	div(class="col contact contact-desktop")
+		div(class="contact-title") Contact
+		form(action="?", method="GET")
+			div(class="row")
+				div(class="col mr-2")
+					label(for="contact-name" class="form-label") Name
+					input(id="contact-name" class="form-control form-control--dark" type="text")
+				div(class="col")
+					label(for="contact-email" class="form-label") E-mail
+					input(id="contact-email" class="form-control form-control--dark" type="email")
+			div(class="row")
+				div(class="col mr-2")
+					label(for="contact-subject" class="form-label") Subject
+					input(id="contact-subject" class="form-control form-control--dark" type="text")
+				div(class="col")
+					label(for="contact-select" class="form-label") Select Budget
+					select(id="contact-select" class="btn btn--md btn--info form-select")
+						option $10.000 – $15.000
+						option $15.000 – $20.000
+			div(class="row")
+				div(class="col contact-group")
+					label(for="contact-message" class="form-label") Message
+					textarea(rows="6" id="contact-message" class="form-control form-control--dark")
+			div(class="btn-group contact-footer")
+				div(class="checkbox-wrap")
+					input(type="checkbox" id="checkbox-3" class="checkbox__input")
+					label(for="checkbox-3" class="checkbox__label") Send me a copy
+				button(class="btn btn--success contact-footer-btn" type="submit") Send
+
+	div(class="col contact contact-mobile")
+		div(class="contact-title") Contact
+		form(action="?", method="GET")
+			div(class="row mt-1")
+				div(class="contact-group")
+					label(for="contact-name" class="form-label") Name
+					input(id="contact-name" class="form-control form-control--dark" type="text")
+			div(class="row")
+				div(class="contact-group")
+					label(for="contact-subject" class="form-label") E-mail
+					input(id="contact-subject" class="form-control form-control--dark" type="text")
+			div(class="row")
+				div(class="form-group w-100")
+					label(for="contact-message" class="form-label") Message
+					textarea(rows="6" id="contact-message" class="form-control form-control--dark")
+			button(class="btn btn--success contact-footer-btn--mobile" type="submit") Send
