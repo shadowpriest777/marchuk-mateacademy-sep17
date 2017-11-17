@@ -89,7 +89,7 @@
 	-ms-flex-item-align: center;
 	align-self: center;
 }
-.add-to-cart{
+.catalog-goods__add-to-cart{
   outline: none;
   cursor: pointer;
   border: none;
@@ -97,7 +97,7 @@
 	color: #fff;
 	background-color: #e8645a;
 }
-.add-to-cart:hover{
+.catalog-goods__add-to-cart:hover{
 	background-color: #d44035;
 }
 .table-header{
@@ -162,7 +162,7 @@
 	.catalog-goods__price{
 		font-size: 1.2rem;
 	}
-	.add-to-cart {
+	.catalog-goods__add-to-cart {
     padding: 12px 30px;
 	}
 }
@@ -217,7 +217,7 @@
 	-ms-flex-direction: column;
 	flex-direction: column;
 	}
-	.table-view .add-to-cart{
+	.table-view .catalog-goods__add-to-cart{
 		padding: 8px;
 	}
 }
