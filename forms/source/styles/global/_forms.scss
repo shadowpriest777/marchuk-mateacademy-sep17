@@ -23,8 +23,8 @@
 	&--icon{
 		position: absolute;
 		color:#c6ccd2;
-		left:17px;
-		top:16px;
+		top: 50%;
+    transform: translateY(-50%);
 		z-index:1;
 	}
 
