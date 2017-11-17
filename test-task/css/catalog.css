@@ -3,7 +3,7 @@
 	display: -ms-flexbox;
 	display: flex;
 	margin: auto;
-	max-width: 1440px;
+	max-width: 1270px;
 }
 .catalog{
 	margin: 100px auto;
@@ -146,7 +146,7 @@
 }
 .table-view .catalog-goods__item-descr li{
 	padding: 0px 20px;
-	width: 120px;
+	width: 100px;
 	text-align: center;
 }
 .table-view .catalog-goods__price{
