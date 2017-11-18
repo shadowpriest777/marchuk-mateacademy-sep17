@@ -2,33 +2,26 @@
   display: block;
   width: 100%;
   padding: 13px;
-  border: 2px solid $input-border;
+  border: 2px solid #c6ccd2;
   border-radius: $input-rounded;
 	outline: none;
 
-	&--focus{
-		opacity: 0.4;
-		border-color: #999;
-		
-		&:focus {
-			outline: none;
-			opacity: 1;
-			border-color: $input-border;
-			color: #383737;
+	&:focus {
 		+ .form-control--icon{
 			color: #383737;
-			}
 		}
 	}
+	
 	&--icon{
 		position: absolute;
 		color:#c6ccd2;
 		top: 50%;
+		left: 17px;
     transform: translateY(-50%);
 		z-index:1;
 	}
 
-	&--light::placeholder{
+	&::placeholder{
 	color: $input-color-placeholder-light;
 	}
 	
