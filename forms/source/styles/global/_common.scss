@@ -16,44 +16,37 @@
 }
 
 .divider-wrap{
-	position: relative;
 	margin: 20px 0;
 	text-transform: uppercase;
+	overflow: hidden;
 	
 	&--mobile{
 		margin: 15px -10px;
 	}
 }
-.divider-wrap--mobile .form-divider:before{
-	width: 43%;
-}
-.divider-wrap--mobile .form-divider:after{
-	width: 43%;
-}
+
 .form-divider:before{
-	content: '';
+	content: "";
+	position: relative;
 	display: inline-block;
-	width: 45%;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  z-index: 1;
+	width: 50%;
 	height: 1px;
+	vertical-align: middle;
 	background-color: #b4bbc2;
-	border: none;
+	left: -.5em;
+  margin: 0 0 0 -50%;
 }
 
 .form-divider:after{
-	content: '';
+	content: "";
+	position: relative;
 	display: inline-block;
-	width: 45%;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  z-index: 1;
+	width: 50%;
 	height: 1px;
+	vertical-align: middle;
 	background-color: #b4bbc2;
-	border: none;
+	left: .5em;
+	margin: 0 -50% 0 0;
 }
 
 .text-capitalize {
