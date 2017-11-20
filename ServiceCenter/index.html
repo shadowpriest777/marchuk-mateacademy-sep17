@@ -22,8 +22,8 @@
 					</h1>
 <!--					<div class="h-title__content">Есть вопросы? Звоните нам с 10.00 до 19.00</div>-->
 					<div class="h-title__contact">
-						<a href="#"><div class="btn btn-lg btn-info h-title__contact-call-us">09399988899</div></a>
-						<a href="#"><div class="btn btn-lg btn-warning h-title__contact-call-us">09399988899</div></a>
+						<a href="#"><div class="btn btn-lg btn-info h-title__contact-call-us"><i class="fa fa-mobile" aria-hidden="true"></i> 380 (88) 998-88-99</div></a>
+						<a href="#"><div class="btn btn-lg btn-warning h-title__contact-call-us"><i class="fa fa-mobile" aria-hidden="true"></i> 380 (88) 998-88-99</div></a>
 					</div>
 				</div>
 			</div>
@@ -180,15 +180,45 @@
 				</div>
 			</div>
 		</section>
-<!--
+
+		<section class="container-fluid contact-form">
+			<video autoplay loop muted poster="video/poster.jpg" id="video">
+        <source src="video/typing.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    	</video>
+    		<div class="container contact-form__content">
+					<div class="row align-items-center contact-form__bg">
+						<div class="col-lg-6 text-center">
+							<h3>Свяжитесь с нами:</h3>
+							<a href="tel: +38888888888"><i class="fa fa-mobile" aria-hidden="true"></i> 380 (88) 998-88-99</a><br>
+							<a href="tel: +38888888888"><i class="fa fa-mobile" aria-hidden="true"></i> 380 (88) 998-88-99</a>
+						</div>
+						<div class="col-lg-6">
+							<h3 class="text-center">Оставьте заявку на<br> бесплатную консультацию</h3>
+							<form class="d-flex flex-column" action="?">
+								<div class="form-group">
+									<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Ваше имя">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control form-control-lg" id="formGroupExampleInput2" placeholder="Ваш email">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control form-control-lg" id="formGroupExampleInput2" placeholder="Ваш телефон">
+								</div>
+								<button class="btn btn-lg btn-warning">Отправить заявку</button>
+							</form>
+						</div>
+					</div>
+				</div>
+		</section>
+		
 		<div class="map">
-		<h3>My Google Maps Demo</h3>
+		<h3 class="map-title">Наше расположение</h3>
     <div id="map"></div>
     <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var uluru = {lat: 50.451501, lng: 30.628515};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 12,
           center: uluru
         });
         var marker = new google.maps.Marker({
@@ -201,7 +231,6 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5AXcFCHpDn9ap8ZLXX475R22I0_fiMW8&callback=initMap">
     </script>
 		</div>
--->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
