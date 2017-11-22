@@ -14,17 +14,14 @@
 	</head>
 
 	<body>
-		<header class="header">
-			<div class="container">
-				<div class="row justify-content-between align-items-center h-title">
-					<h1 class="h-title__logo">СКОРАЯ КОМПЬЮТЕРНАЯ ПОМОЩЬ
-						<span class="h-title__logo-descr">Ваш надежный партнер в решении проблем с компьютером</span>
-					</h1>
-<!--					<div class="h-title__content">Есть вопросы? Звоните нам с 10.00 до 19.00</div>-->
-					<div class="h-title__contact">
-						<a href="#"><div class="btn btn-lg btn-info h-title__contact-call-us"><i class="fa fa-mobile" aria-hidden="true"></i> 380 (88) 998-88-99</div></a>
-						<a href="#"><div class="btn btn-lg btn-warning h-title__contact-call-us"><i class="fa fa-mobile" aria-hidden="true"></i> 380 (88) 998-88-99</div></a>
-					</div>
+		<header class="header container-fluid">
+			<div class="row justify-content-around align-items-center h-title">
+				<h1 class="h-title__logo">СКОРАЯ КОМПЬЮТЕРНАЯ ПОМОЩЬ
+					<span class="h-title__logo-descr">Ваш надежный партнер в решении проблем с компьютером</span>
+				</h1>
+				<div class="h-title__contact">
+					<a href="#"><div class="btn btn-lg btn-info h-title__contact-call-us"><i class="fa fa-mobile" aria-hidden="true"></i> 380 (88) 998-88-99</div></a>
+					<a href="#"><div class="btn btn-lg btn-warning h-title__contact-call-us"><i class="fa fa-mobile" aria-hidden="true"></i> 380 (88) 998-88-99</div></a>
 				</div>
 			</div>
 		</header>
@@ -148,41 +145,38 @@
 			<div class="divider-wrap">
 				<span class="divider">Как мы работаем</span>
 			</div>
-			<div class="row justify-content-between text-center">
-				<div class="how-we-work__content">
-					<div class="how-we-work__icon">
-						<i class="fa fa-check-square-o" aria-hidden="true"></i>
+			<div class="how-we-work row justify-content-around text-center">
+				
+					<div class="how-we-work__content">
+						<div class="how-we-work__icon">
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+						</div>
+							<p>Оставляете заявку</p>	
 					</div>
-						<p>Оставляете заявку</p>
-				</div>
-				<img class="how-we-work__next-icon" src="img/icons/next.svg" alt="next">
-				<div class="how-we-work__content">
-					<div class="how-we-work__icon">
-						<i class="fa fa-phone" aria-hidden="true"></i>
+					<div class="how-we-work__content">
+						<div class="how-we-work__icon">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</div>
+							<p>Консультация по телефону</p>
 					</div>
-						<p>Консультация по телефону</p>
-				</div>
-				<img class="how-we-work__next-icon" src="img/icons/next.svg" alt="next">
-				<div class="how-we-work__content">
-					<div class="how-we-work__icon">
-						<i class="fa fa-user" aria-hidden="true"></i>
+					<div class="how-we-work__content">
+						<div class="how-we-work__icon">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</div>
+							<p>Консультация сепециальста и расчет стоимости</p>
 					</div>
-						<p>Консультация сепециальста и расчет стоимости</p>
-				</div>
-				<img class="how-we-work__next-icon" src="img/icons/next.svg" alt="next">
-				<div class="how-we-work__content">
-					<div class="how-we-work__icon">
-						<i class="fa fa-cog" aria-hidden="true"></i>
+					<div class="how-we-work__content">
+						<div class="how-we-work__icon">
+							<i class="fa fa-cog" aria-hidden="true"></i>
+						</div>
+							<p>Проведение работ</p>
 					</div>
-						<p>Проведение работ</p>
-				</div>
-				<img class="how-we-work__next-icon" src="img/icons/next.svg" alt="next">
-				<div class="how-we-work__content">
-					<div class="how-we-work__icon">
-						<i class="fa fa-handshake-o" aria-hidden="true"></i>
+					<div class="how-we-work__content">
+						<div class="how-we-work__icon after-none">
+							<i class="fa fa-handshake-o" aria-hidden="true"></i>
+						</div>
+							<p>Прием работ и расчёт</p>
 					</div>
-						<p>Прием работ и расчёт</p>
-				</div>
 			</div>
 		</section>
 
@@ -202,9 +196,6 @@
 							<form class="d-flex flex-column" action="?">
 								<div class="form-group">
 									<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Ваше имя">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control form-control-lg" id="formGroupExampleInput2" placeholder="Ваш email">
 								</div>
 								<div class="form-group">
 									<input type="text" class="form-control form-control-lg" id="formGroupExampleInput2" placeholder="Ваш телефон">
@@ -259,23 +250,6 @@
             }
 
         }())
-    </script>
-    <script>
-        $(function(){
-				 var shrinkHeader = 100;
-					$(window).scroll(function() {
-						var scroll = getCurrentScroll();
-							if ( scroll >= shrinkHeader ) {
-									 $('header').addClass('fixed-header');
-								}
-								else {
-										$('header').removeClass('fixed-header');
-								}
-					});
-				function getCurrentScroll() {
-						return window.pageYOffset || document.documentElement.scrollTop;
-						}
-				});
     </script>
 
 </body>
