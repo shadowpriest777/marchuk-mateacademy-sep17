@@ -199,6 +199,7 @@ box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 .how-we-work__content p{
 	font-size: 14px;
 	margin-top: 20px;
+	word-wrap: break-word;
 }
 .how-we-work__icon{
 	width: 100px;
