@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Service Center</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -31,10 +31,19 @@
 				<div class="col-lg-12">
 					<div class="main-section__title my-4">Ремонт и настройка компьютеров<br> Быстро и проффесионально!
 					</div>
-					<div class="d-flex align-items-center my-4">
-						<img class="reasons-icon" src="img/icons/gear.svg" alt="good-quality">
+					<div class="d-flex justify-content-between align-items-end mt-2">
+						<div class="animate-arrow"><div data-content="Заказать >"></div></div>
 						<h2 class="reasons-title"> <span> 6 причин </span>почему выбирают именно нас</h2>
-					</div>
+							<form class="d-flex flex-column main-form" action="?">
+								<div class="form-group">
+									<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Ваше имя">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control form-control-lg" id="formGroupExampleInput2" placeholder="Ваш телефон">
+								</div>
+								<button class="btn btn-lg btn-warning">Отправить заявку</button>
+							</form>
+						</div>
 					<div class="row main-section__reasons">
 						<div class="col-lg-6">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
@@ -142,7 +151,7 @@
 		</section>
 		
 		<section class="container">
-			<div class="divider-wrap divider-mb">
+			<div class="divider-wrap">
 				<span class="divider">Как мы работаем</span>
 			</div>
 			<div class="how-we-work row justify-content-around text-center">
@@ -181,7 +190,7 @@
 		</section>
 
 		<section class="container-fluid contact-form">
-			<video autoplay loop muted poster="img/computer-pc-workplace-home-office-159760.jpeg" id="video">
+			<video autoplay loop muted poster="video/poster.jpg" id="video">
         <source src="video/typing.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     	</video>
     		<div class="container contact-form__content">
@@ -212,7 +221,7 @@
     <div id="map"></div>
     <script>
       function initMap() {
-        var uluru = {lat: 50.45477083, lng: 30.62943877};
+        var uluru = {lat: 50.451501, lng: 30.628515};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
           center: uluru
