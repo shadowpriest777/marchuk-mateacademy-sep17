@@ -153,7 +153,7 @@ video{
 }
 .services-content__list{
 	list-style: none;
-	min-height: 300px;
+	min-height: 330px;
 }
 .services-content__list li{
 	display: block;
@@ -213,7 +213,9 @@ box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 	display: none;
 }
 .quote-slider__item {
-   padding: 0 120px;
+  padding: 0 120px;
+	min-height: 220px;
+	overflow: hidden;
 }
 .quote-slider__item h3{
 	color: #17a2b8;
