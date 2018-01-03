@@ -10,10 +10,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-.container {
-	max-width: 1200px;
-}
-
 /*NAVIGATION*/
 
 .top-nav {
@@ -101,6 +97,7 @@ body {
 	font-size: 5rem;
 	color: #fff;
 	font-weight: 300;
+	word-wrap: break-word;
 }
 
 .welcome-title ~ span {
@@ -133,6 +130,7 @@ body {
 	color: #9b0ba4;
 	text-align: center;
 	margin-bottom: 2rem;
+	word-wrap: break-word;
 }
 
 .postscr {
@@ -166,6 +164,8 @@ body {
 
 .services-link {
 	color: #fdac1f;
+	display: inline-block;
+	margin-bottom: 1rem;
 }
 
 /*registration*/
@@ -228,6 +228,7 @@ body {
 	font-size: 2rem;
 	font-weight: 300;
 	margin-bottom: 1.5rem;
+	word-wrap: break-word;
 }
 
 .blog {
@@ -282,7 +283,11 @@ body {
 	color: #fff;
 }
 
-@media screen and (max-width: 1024px) {
+.blockquote-md {
+	display: none;
+}
+
+@media screen and (max-width: 1023px) {
 	.hero-quote {
 		font-size: 1.8rem;
 	}
@@ -295,9 +300,57 @@ body {
 	#carouselExampleIndicators {
 		display: none;
 	}
-
+	.blockquote-md {
+		display: block;
+	}
 }
 
+@media screen and (max-width: 767px) {
+	.welcome-img {
+		background-image: none;
+	}
+	.contacts-item {
+		text-align: left;
+		margin-left: 50px;
+	}
+}
 
-
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 479px) {
+	.welcome-title {
+		font-size: 1.8rem;
+	}
+	.welcome-title ~ span {
+		font-size: 1.5rem;
+	}
+	.welcome,
+	.registration,
+	.services,
+	.contacts {
+		padding: 30px 0;
+	}
+	.about-title,
+	.services-title,
+	.review-title,
+	.blog-title,
+	.contacts-title {
+		font-size: 3rem;
+	}
+	.welcome-title,
+	.registration-title {
+		font-size: 2rem;
+	}
+	.hero-quote {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	.hero-quote span {
+		font-size: 2rem;
+	}
+	.welcome-descr {
+		margin-left: 0;
+	}
+	.blog-btn {
+		width: 100%;
+		margin: 0 15px;
+	}
+}
